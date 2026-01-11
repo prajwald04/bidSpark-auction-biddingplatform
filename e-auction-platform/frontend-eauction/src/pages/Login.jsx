@@ -48,10 +48,33 @@ function Login() {
           setError('Invalid user role');
       }
     } catch (err) {
-      const errorMessage = err?.response?.data?.message || err?.message || 'Connection failed. Please check if the backend server is running.';
+      let errorMessage = 'Login failed. ';
+      
+      // Check for network errors
+      if (err.code === 'ECONNABORTED' || err.message === 'Network Error' || !err.response) {
+        if (err.userMessage) {
+          errorMessage = err.userMessage;
+        } else if (process.env.NODE_ENV === 'production' && window.location.hostname !== 'localhost' && !process.env.REACT_APP_API_URL) {
+          errorMessage = 'Backend server is not configured. The API URL environment variable is missing.';
+        } else {
+          errorMessage = `Cannot connect to backend server. Please check if the server is running at ${process.env.REACT_APP_API_URL || 'http://localhost:8080'}`;
+        }
+      } else if (err.response?.data?.message) {
+        errorMessage = err.response.data.message;
+      } else if (err.response?.status === 401) {
+        errorMessage = 'Invalid username or password.';
+      } else {
+        errorMessage += err.message || 'Unknown error occurred.';
+      }
+      
       setError(errorMessage);
       console.error('Login error:', err);
       console.error('API URL:', process.env.REACT_APP_API_URL || 'http://localhost:8080');
+      console.error('Error details:', {
+        code: err.code,
+        message: err.message,
+        response: err.response,
+      });
     } finally {
       setLoading(false);
     }
