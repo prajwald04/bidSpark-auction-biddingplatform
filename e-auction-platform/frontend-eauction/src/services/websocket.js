@@ -1,6 +1,9 @@
 import SockJS from 'sockjs-client';
 import { Client } from '@stomp/stompjs';
 
+// Use environment variable or fallback to localhost for development
+const WS_BASE_URL = process.env.REACT_APP_WS_URL || process.env.REACT_APP_API_URL || 'http://localhost:8080';
+
 class WebSocketService {
   constructor() {
     this.stompClient = null;
@@ -10,7 +13,7 @@ class WebSocketService {
 
   connect(onConnect, onError) {
     this.stompClient = new Client({
-      webSocketFactory: () => new SockJS('http://localhost:8080/ws'),
+      webSocketFactory: () => new SockJS(`${WS_BASE_URL}/ws`),
       reconnectDelay: 5000,
       heartbeatIncoming: 10000,
       heartbeatOutgoing: 10000,
