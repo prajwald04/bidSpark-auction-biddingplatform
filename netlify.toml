@@ -1,6 +1,6 @@
 [build]
   base = "e-auction-platform/frontend-eauction"
-  publish = "e-auction-platform/frontend-eauction/build"
+  publish = "build"
   command = "npm install && npm run build"
 
 [[redirects]]
