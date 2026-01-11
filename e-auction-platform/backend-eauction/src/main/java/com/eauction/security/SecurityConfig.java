@@ -45,7 +45,6 @@ public class SecurityConfig {
         config.addAllowedOrigin("http://127.0.0.1:3000");
         // Allow Netlify deployment
         config.addAllowedOrigin("https://bidspark.netlify.app");
-        config.addAllowedOrigin("https://*.netlify.app"); // Allow all Netlify preview deployments
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
         config.setAllowCredentials(true);
