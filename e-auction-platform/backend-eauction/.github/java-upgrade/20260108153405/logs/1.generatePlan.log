@@ -1,0 +1,7 @@
+2026-01-08T15:34:05.593Z [INFO] Initializing project configuration...
+2026-01-08T15:34:05.596Z [INFO] Project c:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction is a maven project, try to get java version from pom.xml
+2026-01-08T15:34:05.601Z [INFO] Project java version: 8
+2026-01-08T15:34:05.602Z [INFO] Maven project detected.
+2026-01-08T15:34:05.603Z [INFO] Build tool type: mvn
+2026-01-08T15:34:05.660Z [ERROR] JDK is not provided or detected for Java 8.
+2026-01-08T15:34:44.299Z [ERROR] Failed to prepare project configuration or init upgrade options: Canceled.

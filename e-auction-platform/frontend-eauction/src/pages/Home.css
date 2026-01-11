@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+.home {
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+  min-height: 60vh;
+  padding: 40px 20px;
+  background: radial-gradient(1200px 600px at 20% 0%, #4facfe 0%, #00f2fe 100%);
+  color: #fff;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-title {
+  font-size: 48px;
+  line-height: 1.1;
+  margin: 0 0 16px 0;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  opacity: 0.95;
+  margin-bottom: 24px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.cta {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.15s ease, background 0.3s ease;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+.cta:hover {
+  transform: translateY(-1px);
+  background: rgba(255,255,255,0.25);
+}
+.cta.primary {
+  background: #181a1f;
+  border-color: #181a1f;
+}
+.cta.primary:hover {
+  background: #0f1116;
+}
+
+.hero-art {
+  width: 100%;
+  height: 360px;
+  border-radius: 16px;
+  background: radial-gradient(600px 300px at 30% 30%, rgba(255,255,255,0.25) 0%, rgba(255,255,255,0.08) 40%, rgba(0,0,0,0) 60%),
+    linear-gradient(135deg, #0f172a 0%, #1f2937 50%, #111827 100%);
+  background-size: 100% 100%;
+  background-position: center;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  padding: 24px;
+  max-width: 1200px;
+  margin: -40px auto 0 auto;
+}
+.feature-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+  padding: 16px;
+  border: 1px solid #eef2f7;
+}
+.feature-card h3 {
+  margin: 0 0 8px 0;
+  color: #222;
+}
+.feature-card p {
+  margin: 0;
+  color: #5b6770;
+}
+
+.roles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  padding: 24px;
+  max-width: 1200px;
+  margin: 16px auto 32px auto;
+}
+.role {
+  background: #f8fafc;
+  border: 1px dashed #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+}
+.role h4 {
+  margin: 0 0 8px 0;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 24px 12px;
+  }
+  .hero-title {
+    font-size: 36px;
+  }
+  .hero-art {
+    height: 240px;
+  }
+}

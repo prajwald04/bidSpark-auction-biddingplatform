@@ -1,0 +1,133 @@
+2026-01-08T17:31:01.900Z [INFO] ----------------------invoke build_java_project----------------------
+2026-01-08T17:31:01.901Z [INFO] [Tool.invoke]({name: build_java_project, input: {
+  "codeChangesDetails": "- Remove unused JJWT dependency to eliminate potential security risks",
+  "codeChangesMessage": "Remove unused JJWT dependency",
+  "projectPath": "c:\\Users\\DELL\\Desktop\\bidspark\\e-auction-platform\\backend-eauction"
+}}).
+2026-01-08T17:31:01.903Z [INFO] [Task.start](): Starting task toolCall
+2026-01-08T17:31:01.909Z [INFO] [Task.start](): Started task toolCall
+2026-01-08T17:31:01.911Z [INFO] [Tool.invoke] validate GitHub Copilot license.
+2026-01-08T17:31:01.912Z [INFO] [Tool.invoke] do pre-invoke.
+2026-01-08T17:31:01.914Z [INFO] Project c:\Users\DELL\Desktop\bidspark\e-auction-platform\backend-eauction is a maven project, try to get java version from pom.xml
+2026-01-08T17:31:01.919Z [INFO] Project java version: 21
+2026-01-08T17:31:01.920Z [INFO] Maven project detected.
+2026-01-08T17:31:01.922Z [INFO] Build tool type: mvn
+2026-01-08T17:31:02.902Z [INFO] [Environment] Running command (Java 21): java -version
+java version "21.0.1" 2023-10-17 LTS
+Java(TM) SE Runtime Environment (build 21.0.1+12-LTS-29)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.1+12-LTS-29, mixed mode, sharing)
+2026-01-08T17:31:03.582Z [INFO] [JdkEnvironment] Got real Java version: 21.0.1
+2026-01-08T17:31:03.584Z [INFO] JDK: {
+  "name": "java",
+  "path": "C:\\Program Files\\Java\\jdk-21\\bin",
+  "version": "21"
+}
+2026-01-08T17:31:03.740Z [INFO] [Environment] Running command (Java 21): mvn --version
+Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+Maven home: C:\Users\DELL\Downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9
+Java version: 21.0.1, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-21
+Default locale: en_IN, platform encoding: UTF-8
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+2026-01-08T17:31:06.077Z [INFO] Real build tool version: 3.9.9
+2026-01-08T17:31:06.078Z [INFO] Build tool: {
+  "name": "mvn",
+  "path": "C:\\Users\\DELL\\Downloads\\apache-maven-3.9.9-bin\\apache-maven-3.9.9\\bin",
+  "version": "3.9.9"
+}
+2026-01-08T17:31:06.081Z [INFO] Project config: {
+  "buildTool": {
+    "path": "C:\\Users\\DELL\\Downloads\\apache-maven-3.9.9-bin\\apache-maven-3.9.9\\bin",
+    "name": "mvn",
+    "version": "3.9.9"
+  },
+  "jdk": {
+    "path": "C:\\Program Files\\Java\\jdk-21\\bin",
+    "name": "java",
+    "version": "21"
+  },
+  "name": "backend-eauction",
+  "dir": "c:\\Users\\DELL\\Desktop\\bidspark\\e-auction-platform\\backend-eauction"
+}
+2026-01-08T17:31:06.104Z [INFO] [Tool.invoke] do invoke.
+2026-01-08T17:31:06.106Z [INFO] [BaseBuildTool] Firing config modified event for mvn, sleeping for 5 seconds
+2026-01-08T17:31:06.121Z [INFO] [Environment] Running command (Java 21): mvn --version
+Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+Maven home: C:\Users\DELL\Downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9
+Java version: 21.0.1, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-21
+Default locale: en_IN, platform encoding: UTF-8
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+2026-01-08T17:31:09.850Z [INFO] [BaseBuildTool] New version of mvn: 3.9.9 -> 3.9.9
+2026-01-08T17:31:09.853Z [INFO] [MavenBuildTool] Getting Java version of c:\Users\DELL\Desktop\bidspark\e-auction-platform\backend-eauction from pom.xml
+2026-01-08T17:31:09.854Z [INFO] [MavenBuildTool] Searching for pom.xml files in c:\Users\DELL\Desktop\bidspark\e-auction-platform\backend-eauction
+2026-01-08T17:31:09.855Z [INFO] [MavenBuildTool] Getting all module coordinates of c:\Users\DELL\Desktop\bidspark\e-auction-platform\backend-eauction
+2026-01-08T17:31:09.856Z [INFO] [MavenBuildTool] Getting effective POMs of c:\Users\DELL\Desktop\bidspark\e-auction-platform\backend-eauction
+2026-01-08T17:31:09.858Z [INFO] [Environment] Running command (Java 21): mvn help:effective-pom -Doutput=effective-pom-426f38c2-68ba-418e-85cd-cedb0b465278.log
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.eauction:backend-eauction >--------------------
+[INFO] Building backend-eauction 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- help:3.4.1:effective-pom (default-cli) @ backend-eauction ---
+[INFO] Effective-POM written to: c:\Users\DELL\Desktop\bidspark\e-auction-platform\backend-eauction\effective-pom-426f38c2-68ba-418e-85cd-cedb0b465278.log
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  10.638 s
+[INFO] Finished at: 2026-01-08T23:01:42+05:30
+[INFO] ------------------------------------------------------------------------
+2026-01-08T17:31:43.884Z [INFO] [MavenBuildTool] Found pom.xml files: c:\Users\DELL\Desktop\bidspark\e-auction-platform\backend-eauction\pom.xml
+2026-01-08T17:31:43.886Z [INFO] [MavenBuildTool] Java version found in c:\Users\DELL\Desktop\bidspark\e-auction-platform\backend-eauction\pom.xml: 21
+2026-01-08T17:31:43.887Z [INFO] [BaseBuildTool] Notifying Java version/Config change: '21' || '21'
+2026-01-08T17:31:43.888Z [INFO] [Project backend-eauction]: Java version of project backend-eauction is changed.
+2026-01-08T17:31:43.889Z [INFO] [Project backend-eauction]: Java version of project backend-eauction is changed to '21' || '21'
+2026-01-08T17:31:43.891Z [INFO] [Project backend-eauction]: build tool config of project backend-eauction is modified.
+2026-01-08T17:31:43.893Z [INFO] [Project backend-eauction]: dependencies of project backend-eauction may be changed, resetting promise.
+2026-01-08T17:31:43.895Z [INFO] [MavenBuildTool] Getting build errors of c:\Users\DELL\Desktop\bidspark\e-auction-platform\backend-eauction using Maven
+2026-01-08T17:31:43.897Z [INFO] [Environment] Running command (Java 21): mvn clean test-compile -q -B -fn
+2026-01-08T17:32:03.292Z [INFO] [MavenBuildTool] parsing compilation errors.
+2026-01-08T17:32:03.293Z [INFO] [BaseBuildTool] Found 1 modules: .
+2026-01-08T17:32:03.317Z [INFO] [BaseBuildTool] Finish counting Java and class files
+2026-01-08T17:32:03.318Z [INFO] [MavenBuildTool] Cleaning c:\Users\DELL\Desktop\bidspark\e-auction-platform\backend-eauction using Maven
+2026-01-08T17:32:03.329Z [INFO] [Environment] Running command (Java 21): mvn clean -q -B -fn
+2026-01-08T17:32:13.826Z [INFO] [Project backend-eauction]: Compilation errors of project backend-eauction is updated: 0 -> 0
+2026-01-08T17:32:13.827Z [INFO] Build succeeded! There are no build errors in the project.
+2026-01-08T17:32:13.831Z [INFO] [Tool.invoke]({result: {
+  "message": "Build succeeded! There are no build errors in the project.",
+  "result": {
+    "numOfJavaFiles": 13,
+    "numOfClassFiles": 13,
+    "modulesBuildResult": {
+      ".": {
+        "numOfJavaFiles": 13,
+        "numOfClassFiles": 13
+      }
+    },
+    "errors": [],
+    "command": "mvn clean test-compile -q -B -fn"
+  },
+  "telemetry": {
+    "result": "succeeded"
+  }
+}}).
+2026-01-08T17:32:13.833Z [INFO] [Task.complete](): Completing task toolCall
+2026-01-08T17:32:13.836Z [INFO] [Task.complete](): Completed task toolCall
+2026-01-08T17:32:13.837Z [INFO] [Tool.invoke]({message: Build succeeded! There are no build errors in the project.}).
+2026-01-08T17:32:13.839Z [INFO] ----------------------invoked build_java_project----------------------
+2026-01-08T17:32:19.020Z [INFO] ---------------------prepare validate_cves_for_java----------------------
+2026-01-08T17:32:19.022Z [INFO] [Tool.prepareInvocation]({name: validate_cves_for_java, input: {
+  "dependencies": [
+    "org.springframework.boot:spring-boot-starter-web:3.2.12",
+    "org.springframework.boot:spring-boot-starter-security:3.2.12",
+    "org.springframework.boot:spring-boot-starter-data-jpa:3.2.12",
+    "org.springframework.boot:spring-boot-starter-websocket:3.2.12",
+    "com.mysql:mysql-connector-j:8.4.0",
+    "org.projectlombok:lombok:1.18.36"
+  ]
+}}).
+2026-01-08T17:32:19.024Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-01-08T17:32:19.027Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Validate CVEs"
+}}).
+2026-01-08T17:32:19.028Z [INFO] ----------------------prepared validate_cves_for_java----------------------

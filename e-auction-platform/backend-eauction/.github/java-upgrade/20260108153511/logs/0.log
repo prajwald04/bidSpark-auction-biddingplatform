@@ -1,0 +1,107 @@
+2026-01-08T15:35:11.340Z [INFO] ----------------------invoke generate_upgrade_plan----------------------
+2026-01-08T15:35:11.341Z [INFO] [Tool.invoke]({name: generate_upgrade_plan, input: {
+  "projectPath": "C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction",
+  "targetJavaVersion": "21"
+}}).
+2026-01-08T15:35:11.344Z [INFO] [Plan.tryStartTask]({tool:generate_upgrade_plan, nextTask:{type:undefined, tool:undefined}}
+2026-01-08T15:35:11.345Z [INFO] [Plan.tryStartTask]: no next task, create new one.
+2026-01-08T15:35:11.345Z [INFO] [Plan.createTaskAtStart]({tool: generate_upgrade_plan, input: {
+  "projectPath": "C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction",
+  "targetJavaVersion": "21",
+  "sessionId": "20260108153511"
+}}).
+2026-01-08T15:35:11.347Z [INFO] [Plan.tryStartTask]: starting task generatePlan
+2026-01-08T15:35:11.347Z [INFO] [Task.start](): Starting task generatePlan
+2026-01-08T15:35:11.351Z [INFO] [Task.start](1): Started task generatePlan
+2026-01-08T15:35:11.383Z [INFO] [Tool.invoke] validate GitHub Copilot license.
+2026-01-08T15:35:11.389Z [INFO] [Tool.invoke] do pre-invoke.
+2026-01-08T15:35:11.390Z [INFO] [Tool.invoke] do invoke.
+2026-01-08T15:35:11.508Z [INFO] [Task.start](): Starting task generatePlan
+2026-01-08T15:35:11.512Z [INFO] [Task.start](1.1): Started task generatePlan
+2026-01-08T15:35:11.593Z [INFO] ---------------------prepare install_jdk----------------------
+2026-01-08T15:35:11.595Z [INFO] [Tool.prepareInvocation]({name: install_jdk, input: {
+  "sessionId": "20260108153511",
+  "version": "8",
+  "dest": "C:\\Users\\DELL\\.jdk",
+  "reason": "JDK 8 is required to build the project, but not found on the machine."
+}}).
+2026-01-08T15:35:11.596Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-01-08T15:35:12.069Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Download and install JDK",
+  "confirmationMessages": {
+    "title": "Download and install JDK",
+    "message": "\nJDK 8 is required to build the project, but not found on the machine.\nThis tool will download and install JDK 8 from Adoptium with below settings.\n- **Version**: 8\n- **Vendor**: Adoptium\n- **Url**: https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u472-b08/OpenJDK8U-jdk_x64_windows_hotspot_8u472b08.zip\n- **Destination**: `C:\\Users\\DELL\\.jdk`\n- **Checksum**: SHA256: cbafb089f7c8a3e873607c8f4fe40e4943297f641d27806e055e782c82a33985\n- **Signature**: https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u472-b08/OpenJDK8U-jdk_x64_windows_hotspot_8u472b08.zip.sig\n- **Public Key**: https://packages.adoptium.net/artifactory/api/gpg/key/public\n"
+  }
+}}).
+2026-01-08T15:35:12.070Z [INFO] ----------------------prepared install_jdk----------------------
+2026-01-08T15:35:37.813Z [INFO] ----------------------invoke install_jdk----------------------
+2026-01-08T15:35:37.815Z [INFO] [Tool.invoke]({name: install_jdk, input: {
+  "sessionId": "20260108153511",
+  "version": "8",
+  "dest": "C:\\Users\\DELL\\.jdk",
+  "reason": "JDK 8 is required to build the project, but not found on the machine."
+}}).
+2026-01-08T15:35:37.818Z [INFO] [Plan.tryStartTask]({tool:install_jdk, nextTask:{type:undefined, tool:undefined}}
+2026-01-08T15:35:37.819Z [INFO] [Plan.tryStartTask]: no next task, create new one.
+2026-01-08T15:35:37.821Z [INFO] [Plan.createTaskAtStart]({tool: install_jdk, input: {
+  "sessionId": "20260108153511",
+  "version": "8",
+  "dest": "C:\\Users\\DELL\\.jdk",
+  "reason": "JDK 8 is required to build the project, but not found on the machine."
+}}).
+2026-01-08T15:35:37.822Z [INFO] [Plan.tryStartTask]: starting task detached
+2026-01-08T15:35:37.824Z [INFO] [Task.start](): Starting task detached
+2026-01-08T15:35:37.826Z [INFO] [Task.start](): Started task detached
+2026-01-08T15:35:37.827Z [INFO] [Tool.invoke] validate GitHub Copilot license.
+2026-01-08T15:35:37.828Z [INFO] [Tool.invoke] do pre-invoke.
+2026-01-08T15:35:37.830Z [INFO] [Tool.invoke] do invoke.
+2026-01-08T15:37:15.524Z [INFO] [Tool.invoke]({result: {
+  "result": {
+    "name": "java",
+    "path": "C:\\Users\\DELL\\.jdk\\jdk-8\\bin",
+    "version": "8"
+  },
+  "message": "JDK 8 is installed at C:\\Users\\DELL\\.jdk\\jdk-8\\bin",
+  "telemetry": {
+    "tool": "JDK",
+    "version": "8"
+  }
+}}).
+2026-01-08T15:37:15.543Z [INFO] [Plan.completeTask](task:{id:<unknown>, type:detached}, result:{
+  "result": {
+    "name": "java",
+    "path": "C:\\Users\\DELL\\.jdk\\jdk-8\\bin",
+    "version": "8"
+  },
+  "message": "JDK 8 is installed at C:\\Users\\DELL\\.jdk\\jdk-8\\bin",
+  "telemetry": {
+    "tool": "JDK",
+    "version": "8"
+  }
+})
+2026-01-08T15:37:15.544Z [INFO] [Task.complete](): Completing task detached
+2026-01-08T15:37:15.566Z [INFO] [Task.complete](): Completed task detached
+2026-01-08T15:37:15.576Z [INFO] [Plan.completeTask]: no next task, create new one.
+2026-01-08T15:37:15.582Z [INFO] [Plan.completeTask]: getting next task.
+2026-01-08T15:37:15.584Z [INFO] [Plan.getNextTaskAtComplete]({task: [Detached] install_jdk, result: {
+  "name": "java",
+  "path": "C:\\Users\\DELL\\.jdk\\jdk-8\\bin",
+  "version": "8"
+}}).
+2026-01-08T15:37:15.586Z [INFO] [Plan.completeTask]: next task is {type:undefined, expectedToolName:undefined}.
+2026-01-08T15:37:15.588Z [INFO] [Plan.completeTask]: next task has no instruction. Just return JDK 8 is installed at C:\Users\DELL\.jdk\jdk-8\bin
+2026-01-08T15:37:15.590Z [INFO] [Tool.invoke]({message: JDK 8 is installed at C:\Users\DELL\.jdk\jdk-8\bin
+}).
+2026-01-08T15:37:15.591Z [INFO] ----------------------invoked install_jdk----------------------
+2026-01-08T15:37:15.805Z [INFO] [Task.complete](1.1): Completing task generatePlan
+2026-01-08T15:37:15.966Z [INFO] [Task.complete](1.1): Completed task generatePlan
+2026-01-08T15:39:50.328Z [INFO] Project dependencies loaded: [
+  "org.springframework.boot:spring-boot-starter-web:2.7.12:jar"
+]
+2026-01-08T15:39:50.330Z [INFO] Project modules loaded: [
+  "com.eauction:backend-eauction:0.0.1-SNAPSHOT"
+]
+2026-01-08T15:39:50.550Z [ERROR] [Tool.invoke] error occurs when invoking tool generate_upgrade_plan: Error: Failed to get git status for C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction: fatal: not a git repository (or any of the parent directories): .git.
+2026-01-08T15:39:50.553Z [INFO] [Task.complete](1): Completing task generatePlan
+2026-01-08T15:39:50.555Z [INFO] ----------------------invoked generate_upgrade_plan----------------------
+2026-01-08T15:39:50.557Z [INFO] [Task.complete](1): Completed task generatePlan

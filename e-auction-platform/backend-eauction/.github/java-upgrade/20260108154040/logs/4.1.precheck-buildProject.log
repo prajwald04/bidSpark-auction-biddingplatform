@@ -1,0 +1,7 @@
+2026-01-08T15:59:18.024Z [INFO] [MavenBuildTool] Getting build errors of C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction using Maven
+2026-01-08T15:59:18.026Z [INFO] [Environment] Running command (Java 8): mvn clean test-compile -q -B -fn
+2026-01-08T15:59:30.653Z [INFO] [MavenBuildTool] parsing compilation errors.
+2026-01-08T15:59:30.655Z [INFO] [BaseBuildTool] Found 1 modules: .
+2026-01-08T15:59:30.666Z [INFO] [BaseBuildTool] Finish counting Java and class files
+2026-01-08T15:59:30.667Z [INFO] [MavenBuildTool] Cleaning C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction using Maven
+2026-01-08T15:59:30.669Z [INFO] [Environment] Running command (Java 8): mvn clean -q -B -fn

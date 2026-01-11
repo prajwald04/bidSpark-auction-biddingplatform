@@ -1,0 +1,21 @@
+.watch {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.watch h1 {
+  margin-bottom: 16px;
+}
+.watch-empty {
+  text-align: center;
+  padding: 40px;
+}
+.watch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 16px;
+}
+.watch-loading, .watch-error {
+  text-align: center;
+  padding: 40px;
+}

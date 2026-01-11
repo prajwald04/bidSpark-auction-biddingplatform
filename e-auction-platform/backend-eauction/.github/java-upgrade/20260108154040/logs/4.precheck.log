@@ -1,0 +1,51 @@
+2026-01-08T15:59:18.017Z [INFO] Prechecking project backend-eauction...
+2026-01-08T15:59:18.019Z [INFO] Prechecking build status...
+2026-01-08T15:59:37.147Z [INFO] Prechecking CVEs...
+2026-01-08T15:59:50.202Z [INFO] Prechecking tests...
+2026-01-08T15:59:50.203Z [INFO] Run tests before upgrading...
+2026-01-08T16:00:24.213Z [INFO] Prepare initial state...
+2026-01-08T16:00:24.214Z [INFO] [Project backend-eauction]: getting project state.
+2026-01-08T16:00:24.215Z [INFO] [Project backend-eauction]: getting Java version.
+2026-01-08T16:00:24.216Z [INFO] [Project backend-eauction]: got Java version: 8
+2026-01-08T16:00:24.218Z [INFO] [Project backend-eauction]: getting dependencies promise.
+2026-01-08T16:00:24.219Z [INFO] Project initial state: {
+  "javaVersion": "8",
+  "dependencies": [
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-web",
+      "type": "jar",
+      "version": "2.7.12",
+      "scope": "compile",
+      "module": "backend-eauction"
+    },
+    {
+      "groupId": "java",
+      "artifactId": "*",
+      "version": "8"
+    }
+  ],
+  "buildResult": {
+    "numOfJavaFiles": 1,
+    "numOfClassFiles": 1,
+    "modulesBuildResult": {
+      ".": {
+        "numOfJavaFiles": 1,
+        "numOfClassFiles": 1
+      }
+    },
+    "errors": [],
+    "command": "mvn clean test-compile -q -B -fn"
+  },
+  "testResult": {
+    "errors": [],
+    "failures": [],
+    "summary": {
+      "tests": 0,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "reports": []
+  }
+}

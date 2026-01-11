@@ -1,0 +1,18 @@
+.bidhistory {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  padding: 16px;
+}
+.bidhistory-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.bidhistory-table th, .bidhistory-table td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #e5e7eb;
+}
+.bidhistory-empty, .bidhistory-loading, .bidhistory-error {
+  padding: 16px;
+}

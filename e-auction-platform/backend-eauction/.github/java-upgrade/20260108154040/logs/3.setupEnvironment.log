@@ -1,0 +1,736 @@
+2026-01-08T15:57:27.533Z [INFO] validate plan and setup env from plan.md file...
+2026-01-08T15:57:27.540Z [INFO] getLLMClient: validating user selected model "gpt-5-mini"
+2026-01-08T15:57:30.234Z [INFO] Model gpt-5-mini is not valid: LanguageModelError: Language model 'copilot/gpt-5-mini' cannot be used by 'vscjava.vscode-java-upgrade'.
+2026-01-08T15:57:30.236Z [WARN] getLLMClient: provided model "gpt-5-mini" is not valid.
+2026-01-08T15:57:30.237Z [WARN] getLLMClient: no user selected model provided, try using default model: claude-sonnet-4
+2026-01-08T15:57:32.876Z [INFO] Available models: gpt-5-mini, gpt-4o-mini, copilot-fast, gpt-4o, claude-haiku-4.5, gpt-4.1, oswe-vscode-prime, auto
+2026-01-08T15:57:32.878Z [INFO] Finding chat model from candidates: claude-sonnet-4, claude-3.5-sonnet, claude-3.7-sonnet, gpt-4.1, gpt-4o, gpt-4o-mini
+2026-01-08T15:57:36.924Z [INFO] Model gpt-4.1 is selected.
+2026-01-08T15:57:36.926Z [INFO] parsing plan.md...
+2026-01-08T15:57:40.742Z [INFO] Successfully parsed plan.md to JSON:
+2026-01-08T15:57:40.743Z [INFO] {
+  "projectConfig": {
+    "name": "backend-eauction",
+    "dir": "C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction",
+    "jdk": {
+      "name": "java",
+      "path": "C:\\Users\\DELL\\.jdk\\jdk-8\\bin",
+      "version": "8"
+    },
+    "buildTool": {
+      "name": "mvn",
+      "path": "C:\\Users\\DELL\\Downloads\\apache-maven-3.9.9-bin\\apache-maven-3.9.9\\bin",
+      "version": "",
+      "defaultOptions": ""
+    }
+  },
+  "upgradeOptions": {
+    "target": {
+      "javaVersion": "21",
+      "dependencies": [],
+      "jdk": {
+        "name": "java",
+        "path": "C:\\Program Files\\Java\\jdk-21\\bin",
+        "version": "21"
+      }
+    },
+    "guidelines": "",
+    "workingBranch": "appmod/java-upgrade-20260108154040",
+    "runTests": true
+  }
+}
+2026-01-08T15:57:40.748Z [INFO] Project C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction is a maven project, try to get java version from pom.xml
+2026-01-08T15:57:40.752Z [INFO] Project java version: 8
+2026-01-08T15:57:40.753Z [INFO] Build tool type: mvn
+2026-01-08T15:57:40.756Z [INFO] [Environment] Running command (Java 8): java -version
+openjdk version "1.8.0_472"
+OpenJDK Runtime Environment (Temurin)(build 1.8.0_472-b08)
+OpenJDK 64-Bit Server VM (Temurin)(build 25.472-b08, mixed mode)
+2026-01-08T15:57:41.055Z [INFO] [JdkEnvironment] Got real Java version: 1.8.0_472
+2026-01-08T15:57:41.057Z [INFO] JDK: {
+  "name": "java",
+  "path": "C:\\Users\\DELL\\.jdk\\jdk-8\\bin",
+  "version": "8"
+}
+2026-01-08T15:57:41.073Z [INFO] [Environment] Running command (Java 8): mvn --version
+Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+Maven home: C:\Users\DELL\Downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9
+Java version: 1.8.0_472, vendor: Temurin, runtime: C:\Users\DELL\.jdk\jdk-8\jre
+Default locale: en_IN, platform encoding: Cp1252
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+2026-01-08T15:57:42.143Z [INFO] Real build tool version: 3.9.9
+2026-01-08T15:57:42.145Z [INFO] Build tool: {
+  "name": "mvn",
+  "path": "C:\\Users\\DELL\\Downloads\\apache-maven-3.9.9-bin\\apache-maven-3.9.9\\bin",
+  "version": "3.9.9"
+}
+2026-01-08T15:57:42.147Z [INFO] Project config: {
+  "name": "backend-eauction",
+  "dir": "C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction",
+  "jdk": {
+    "name": "java",
+    "path": "C:\\Users\\DELL\\.jdk\\jdk-8\\bin",
+    "version": "8"
+  },
+  "buildTool": {
+    "name": "mvn",
+    "path": "C:\\Users\\DELL\\Downloads\\apache-maven-3.9.9-bin\\apache-maven-3.9.9\\bin",
+    "version": "3.9.9",
+    "defaultOptions": ""
+  }
+}
+2026-01-08T15:57:42.150Z [INFO] [Project backend-eauction]: getting Java version.
+2026-01-08T15:57:42.151Z [INFO] [Project backend-eauction]: reset Java version promise.
+2026-01-08T15:57:42.152Z [INFO] [MavenBuildTool] Getting Java version of C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction from pom.xml
+2026-01-08T15:57:42.153Z [INFO] [MavenBuildTool] Searching for pom.xml files in C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction
+2026-01-08T15:57:42.154Z [INFO] [MavenBuildTool] Getting all module coordinates of C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction
+2026-01-08T15:57:42.155Z [INFO] [MavenBuildTool] Getting effective POMs of C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction
+2026-01-08T15:57:42.173Z [INFO] [Environment] Running command (Java 8): mvn help:effective-pom -Doutput=effective-pom-fb5b8a84-8c4c-462f-a6d0-b72febb475e6.log
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.eauction:backend-eauction >--------------------
+[INFO] Building backend-eauction 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- help:3.2.0:effective-pom (default-cli) @ backend-eauction ---
+[INFO] Effective-POM written to: C:\Users\DELL\Desktop\bidspark\e-auction-platform\backend-eauction\effective-pom-fb5b8a84-8c4c-462f-a6d0-b72febb475e6.log
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11.584 s
+[INFO] Finished at: 2026-01-08T21:28:40+05:30
+[INFO] ------------------------------------------------------------------------
+2026-01-08T15:58:41.142Z [INFO] [MavenBuildTool] Found pom.xml files: C:\Users\DELL\Desktop\bidspark\e-auction-platform\backend-eauction\pom.xml
+2026-01-08T15:58:41.177Z [WARN] [MavenBuildTool] Java version not found in C:\Users\DELL\Desktop\bidspark\e-auction-platform\backend-eauction\pom.xml
+2026-01-08T15:58:41.180Z [INFO] [Environment] Running command (Java 8): mvn help:evaluate -Dexpression=project.properties -q -DforceStdout
+<properties>
+  <activemq.version>5.16.6</activemq.version>
+  <antlr2.version>2.7.7</antlr2.version>
+  <appengine-sdk.version>1.9.98</appengine-sdk.version>
+  <artemis.version>2.19.1</artemis.version>
+  <aspectj.version>1.9.7</aspectj.version>
+  <assertj.version>3.22.0</assertj.version>
+  <atomikos.version>4.0.6</atomikos.version>
+  <awaitility.version>4.2.0</awaitility.version>
+  <build-helper-maven-plugin.version>3.3.0</build-helper-maven-plugin.version>
+  <byte-buddy.version>1.12.23</byte-buddy.version>
+  <cache2k.version>2.6.1.Final</cache2k.version>
+  <caffeine.version>2.9.3</caffeine.version>
+  <cassandra-driver.version>4.14.1</cassandra-driver.version>
+  <classmate.version>1.5.1</classmate.version>
+  <commons-codec.version>1.15</commons-codec.version>
+  <commons-dbcp2.version>2.9.0</commons-dbcp2.version>
+  <commons-lang3.version>3.12.0</commons-lang3.version>
+  <commons-pool.version>1.6</commons-pool.version>
+  <commons-pool2.version>2.11.1</commons-pool2.version>
+  <couchbase-client.version>3.3.4</couchbase-client.version>
+  <db2-jdbc.version>11.5.8.0</db2-jdbc.version>
+  <dependency-management-plugin.version>1.0.15.RELEASE</dependency-management-plugin.version>
+  <derby.version>10.14.2.0</derby.version>
+  <dropwizard-metrics.version>4.2.18</dropwizard-metrics.version>
+  <ehcache.version>2.10.9.2</ehcache.version>
+  <ehcache3.version>3.10.8</ehcache3.version>
+  <elasticsearch.version>7.17.10</elasticsearch.version>
+  <embedded-mongo.version>3.4.11</embedded-mongo.version>
+  <flyway.version>8.5.13</flyway.version>
+  <freemarker.version>2.3.32</freemarker.version>
+  <git-commit-id-plugin.version>4.9.10</git-commit-id-plugin.version>
+  <glassfish-el.version>3.0.4</glassfish-el.version>
+  <glassfish-jaxb.version>2.3.8</glassfish-jaxb.version>
+  <glassfish-jstl.version>1.2.6</glassfish-jstl.version>
+  <graphql-java.version>18.5</graphql-java.version>
+  <groovy.version>3.0.17</groovy.version>
+  <gson.version>2.9.1</gson.version>
+  <h2.version>2.1.214</h2.version>
+  <hamcrest.version>2.2</hamcrest.version>
+  <hazelcast-hibernate5.version>2.2.1</hazelcast-hibernate5.version>
+  <hazelcast.version>5.1.6</hazelcast.version>
+  <hibernate-validator.version>6.2.5.Final</hibernate-validator.version>
+  <hibernate.version>5.6.15.Final</hibernate.version>
+  <hikaricp.version>4.0.3</hikaricp.version>
+  <hsqldb.version>2.5.2</hsqldb.version>
+  <htmlunit.version>2.60.0</htmlunit.version>
+  <httpasyncclient.version>4.1.5</httpasyncclient.version>
+  <httpclient.version>4.5.14</httpclient.version>
+  <httpclient5.version>5.1.4</httpclient5.version>
+  <httpcore.version>4.4.16</httpcore.version>
+  <httpcore5.version>5.1.5</httpcore5.version>
+  <infinispan.version>13.0.15.Final</infinispan.version>
+  <influxdb-java.version>2.22</influxdb-java.version>
+  <jackson-bom.version>2.13.5</jackson-bom.version>
+  <jakarta-activation.version>1.2.2</jakarta-activation.version>
+  <jakarta-annotation.version>1.3.5</jakarta-annotation.version>
+  <jakarta-jms.version>2.0.3</jakarta-jms.version>
+  <jakarta-json-bind.version>1.0.2</jakarta-json-bind.version>
+  <jakarta-json.version>1.1.6</jakarta-json.version>
+  <jakarta-mail.version>1.6.7</jakarta-mail.version>
+  <jakarta-management.version>1.1.4</jakarta-management.version>
+  <jakarta-persistence.version>2.2.3</jakarta-persistence.version>
+  <jakarta-servlet-jsp-jstl.version>1.2.7</jakarta-servlet-jsp-jstl.version>
+  <jakarta-servlet.version>4.0.4</jakarta-servlet.version>
+  <jakarta-transaction.version>1.3.3</jakarta-transaction.version>
+  <jakarta-validation.version>2.0.2</jakarta-validation.version>
+  <jakarta-websocket.version>1.1.2</jakarta-websocket.version>
+  <jakarta-ws-rs.version>2.1.6</jakarta-ws-rs.version>
+  <jakarta-xml-bind.version>2.3.3</jakarta-xml-bind.version>
+  <jakarta-xml-soap.version>1.4.2</jakarta-xml-soap.version>
+  <jakarta-xml-ws.version>2.3.3</jakarta-xml-ws.version>
+  <janino.version>3.1.9</janino.version>
+  <java.version>1.8</java.version>
+  <javax-activation.version>1.2.0</javax-activation.version>
+  <javax-annotation.version>1.3.2</javax-annotation.version>
+  <javax-cache.version>1.1.1</javax-cache.version>
+  <javax-jaxb.version>2.3.1</javax-jaxb.version>
+  <javax-jaxws.version>2.3.1</javax-jaxws.version>
+  <javax-jms.version>2.0.1</javax-jms.version>
+  <javax-json.version>1.1.4</javax-json.version>
+  <javax-jsonb.version>1.0</javax-jsonb.version>
+  <javax-mail.version>1.6.2</javax-mail.version>
+  <javax-money.version>1.1</javax-money.version>
+  <javax-persistence.version>2.2</javax-persistence.version>
+  <javax-transaction.version>1.3</javax-transaction.version>
+  <javax-validation.version>2.0.1.Final</javax-validation.version>
+  <javax-websocket.version>1.1</javax-websocket.version>
+  <jaxen.version>1.2.0</jaxen.version>
+  <jaybird.version>4.0.9.java8</jaybird.version>
+  <jboss-logging.version>3.4.3.Final</jboss-logging.version>
+  <jdom2.version>2.0.6.1</jdom2.version>
+  <jedis.version>3.8.0</jedis.version>
+  <jersey.version>2.35</jersey.version>
+  <jetty-el.version>9.0.52</jetty-el.version>
+  <jetty-jsp.version>2.2.0.v201112011158</jetty-jsp.version>
+  <jetty-reactive-httpclient.version>1.1.14</jetty-reactive-httpclient.version>
+  <jetty.version>9.4.51.v20230217</jetty.version>
+  <jmustache.version>1.15</jmustache.version>
+  <johnzon.version>1.2.20</johnzon.version>
+  <jolokia.version>1.7.2</jolokia.version>
+  <jooq.version>3.14.16</jooq.version>
+  <json-path.version>2.7.0</json-path.version>
+  <json-smart.version>2.4.11</json-smart.version>
+  <jsonassert.version>1.5.1</jsonassert.version>
+  <jstl.version>1.2</jstl.version>
+  <jtds.version>1.3.1</jtds.version>
+  <junit-jupiter.version>5.8.2</junit-jupiter.version>
+  <junit.version>4.13.2</junit.version>
+  <kafka.version>3.1.2</kafka.version>
+  <kotlin-coroutines.version>1.6.4</kotlin-coroutines.version>
+  <kotlin.version>1.6.21</kotlin.version>
+  <lettuce.version>6.1.10.RELEASE</lettuce.version>
+  <liquibase.version>4.9.1</liquibase.version>
+  <log4j2.version>2.17.2</log4j2.version>
+  <logback.version>1.2.12</logback.version>
+  <lombok.version>1.18.26</lombok.version>
+  <mariadb.version>3.0.10</mariadb.version>
+  <maven-antrun-plugin.version>3.0.0</maven-antrun-plugin.version>
+  <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
+  <maven-clean-plugin.version>3.2.0</maven-clean-plugin.version>
+  <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
+  <maven-dependency-plugin.version>3.3.0</maven-dependency-plugin.version>
+  <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
+  <maven-enforcer-plugin.version>3.0.0</maven-enforcer-plugin.version>
+  <maven-failsafe-plugin.version>2.22.2</maven-failsafe-plugin.version>
+  <maven-help-plugin.version>3.2.0</maven-help-plugin.version>
+  <maven-install-plugin.version>2.5.2</maven-install-plugin.version>
+  <maven-invoker-plugin.version>3.2.2</maven-invoker-plugin.version>
+  <maven-jar-plugin.version>3.2.2</maven-jar-plugin.version>
+  <maven-javadoc-plugin.version>3.4.1</maven-javadoc-plugin.version>
+  <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
+  <maven-shade-plugin.version>3.3.0</maven-shade-plugin.version>
+  <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
+  <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+  <maven-war-plugin.version>3.3.2</maven-war-plugin.version>
+  <maven.compiler.source>1.8</maven.compiler.source>
+  <maven.compiler.target>1.8</maven.compiler.target>
+  <micrometer.version>1.9.11</micrometer.version>
+  <mockito.version>4.5.1</mockito.version>
+  <mongodb.version>4.6.1</mongodb.version>
+  <mssql-jdbc.version>10.2.3.jre8</mssql-jdbc.version>
+  <mysql.version>8.0.33</mysql.version>
+  <nekohtml.version>1.9.22</nekohtml.version>
+  <neo4j-java-driver.version>4.4.11</neo4j-java-driver.version>
+  <netty.version>4.1.92.Final</netty.version>
+  <okhttp.version>4.9.3</okhttp.version>
+  <oracle-database.version>21.5.0.0</oracle-database.version>
+  <pooled-jms.version>1.2.4</pooled-jms.version>
+  <postgresql.version>42.3.8</postgresql.version>
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  <prometheus-client.version>0.15.0</prometheus-client.version>
+  <quartz.version>2.3.2</quartz.version>
+  <querydsl.version>5.0.0</querydsl.version>
+  <r2dbc-bom.version>Borca-SR2</r2dbc-bom.version>
+  <rabbit-amqp-client.version>5.14.2</rabbit-amqp-client.version>
+  <rabbit-stream-client.version>0.5.0</rabbit-stream-client.version>
+  <reactive-streams.version>1.0.4</reactive-streams.version>
+  <reactor-bom.version>2020.0.32</reactor-bom.version>
+  <resource.delimiter>@</resource.delimiter>
+  <rest-assured.version>4.5.1</rest-assured.version>
+  <rsocket.version>1.1.3</rsocket.version>
+  <rxjava-adapter.version>1.2.1</rxjava-adapter.version>
+  <rxjava.version>1.3.8</rxjava.version>
+  <rxjava2.version>2.2.21</rxjava2.version>
+  <saaj-impl.version>1.5.3</saaj-impl.version>
+  <selenium-htmlunit.version>3.61.0</selenium-htmlunit.version>
+  <selenium.version>4.1.4</selenium.version>
+  <sendgrid.version>4.9.3</sendgrid.version>
+  <servlet-api.version>4.0.1</servlet-api.version>
+  <slf4j.version>1.7.36</slf4j.version>
+  <snakeyaml.version>1.30</snakeyaml.version>
+  <solr.version>8.11.2</solr.version>
+  <spring-amqp.version>2.4.12</spring-amqp.version>
+  <spring-batch.version>4.3.8</spring-batch.version>
+  <spring-data-bom.version>2021.2.12</spring-data-bom.version>
+  <spring-framework.version>5.3.27</spring-framework.version>
+  <spring-graphql.version>1.0.4</spring-graphql.version>
+  <spring-hateoas.version>1.5.4</spring-hateoas.version>
+  <spring-integration.version>5.5.18</spring-integration.version>
+  <spring-kafka.version>2.8.11</spring-kafka.version>
+  <spring-ldap.version>2.4.1</spring-ldap.version>
+  <spring-restdocs.version>2.0.7.RELEASE</spring-restdocs.version>
+  <spring-retry.version>1.3.4</spring-retry.version>
+  <spring-security.version>5.7.8</spring-security.version>
+  <spring-session-bom.version>2021.2.1</spring-session-bom.version>
+  <spring-ws.version>3.1.6</spring-ws.version>
+  <sqlite-jdbc.version>3.36.0.3</sqlite-jdbc.version>
+  <sun-mail.version>1.6.7</sun-mail.version>
+  <thymeleaf-extras-data-attribute.version>2.0.1</thymeleaf-extras-data-attribute.version>
+  <thymeleaf-extras-java8time.version>3.0.4.RELEASE</thymeleaf-extras-java8time.version>
+  <thymeleaf-extras-springsecurity.version>3.0.5.RELEASE</thymeleaf-extras-springsecurity.version>
+  <thymeleaf-layout-dialect.version>3.0.0</thymeleaf-layout-dialect.version>
+  <thymeleaf.version>3.0.15.RELEASE</thymeleaf.version>
+  <tomcat.version>9.0.75</tomcat.version>
+  <unboundid-ldapsdk.version>6.0.8</unboundid-ldapsdk.version>
+  <undertow.version>2.2.24.Final</undertow.version>
+  <versions-maven-plugin.version>2.10.0</versions-maven-plugin.version>
+  <webjars-locator-core.version>0.50</webjars-locator-core.version>
+  <wsdl4j.version>1.6.3</wsdl4j.version>
+  <xml-maven-plugin.version>1.0.2</xml-maven-plugin.version>
+  <xmlunit2.version>2.9.1</xmlunit2.version>
+</properties>2026-01-08T15:58:53.688Z [INFO] [MavenBuildTool] Java version found in project properties: 8
+2026-01-08T15:58:53.689Z [INFO] [Project backend-eauction]: got Java version: 8
+2026-01-08T15:58:53.691Z [INFO] Source Java version: 8
+2026-01-08T15:58:53.692Z [INFO] [Project backend-eauction]: getting dependencies promise.
+2026-01-08T15:58:53.693Z [INFO] [Project backend-eauction]: reset dependencies promise.
+2026-01-08T15:58:53.694Z [INFO] [Environment] Running command (Java 8): mvn dependency:tree -B
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.eauction:backend-eauction >--------------------
+[INFO] Building backend-eauction 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.3.0:tree (default-cli) @ backend-eauction ---
+[INFO] com.eauction:backend-eauction:jar:0.0.1-SNAPSHOT
+[INFO] \- org.springframework.boot:spring-boot-starter-web:jar:2.7.12:compile
+[INFO]    +- org.springframework.boot:spring-boot-starter:jar:2.7.12:compile
+[INFO]    |  +- org.springframework.boot:spring-boot:jar:2.7.12:compile
+[INFO]    |  +- org.springframework.boot:spring-boot-autoconfigure:jar:2.7.12:compile
+[INFO]    |  +- org.springframework.boot:spring-boot-starter-logging:jar:2.7.12:compile
+[INFO]    |  |  +- ch.qos.logback:logback-classic:jar:1.2.12:compile
+[INFO]    |  |  |  +- ch.qos.logback:logback-core:jar:1.2.12:compile
+[INFO]    |  |  |  \- org.slf4j:slf4j-api:jar:1.7.36:compile
+[INFO]    |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.17.2:compile
+[INFO]    |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.17.2:compile
+[INFO]    |  |  \- org.slf4j:jul-to-slf4j:jar:1.7.36:compile
+[INFO]    |  +- jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile
+[INFO]    |  +- org.springframework:spring-core:jar:5.3.27:compile
+[INFO]    |  |  \- org.springframework:spring-jcl:jar:5.3.27:compile
+[INFO]    |  \- org.yaml:snakeyaml:jar:1.30:compile
+[INFO]    +- org.springframework.boot:spring-boot-starter-json:jar:2.7.12:compile
+[INFO]    |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.13.5:compile
+[INFO]    |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.13.5:compile
+[INFO]    |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.13.5:compile
+[INFO]    |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.13.5:compile
+[INFO]    |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.13.5:compile
+[INFO]    |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.13.5:compile
+[INFO]    +- org.springframework.boot:spring-boot-starter-tomcat:jar:2.7.12:compile
+[INFO]    |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:9.0.75:compile
+[INFO]    |  +- org.apache.tomcat.embed:tomcat-embed-el:jar:9.0.75:compile
+[INFO]    |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:9.0.75:compile
+[INFO]    +- org.springframework:spring-web:jar:5.3.27:compile
+[INFO]    |  \- org.springframework:spring-beans:jar:5.3.27:compile
+[INFO]    \- org.springframework:spring-webmvc:jar:5.3.27:compile
+[INFO]       +- org.springframework:spring-aop:jar:5.3.27:compile
+[INFO]       +- org.springframework:spring-context:jar:5.3.27:compile
+[INFO]       \- org.springframework:spring-expression:jar:5.3.27:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.320 s
+[INFO] Finished at: 2026-01-08T21:29:05+05:30
+[INFO] ------------------------------------------------------------------------
+2026-01-08T15:59:05.476Z [INFO] [MavenBuildTool] Successfully got dependency tree of C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction
+2026-01-08T15:59:05.478Z [INFO] [MavenBuildTool] Getting Java version of C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction from pom.xml
+2026-01-08T15:59:05.479Z [INFO] [MavenBuildTool] Searching for pom.xml files in C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction
+2026-01-08T15:59:05.480Z [INFO] [MavenBuildTool] Found pom.xml files: C:\Users\DELL\Desktop\bidspark\e-auction-platform\backend-eauction\pom.xml
+2026-01-08T15:59:05.484Z [WARN] [MavenBuildTool] Java version not found in C:\Users\DELL\Desktop\bidspark\e-auction-platform\backend-eauction\pom.xml
+2026-01-08T15:59:05.486Z [INFO] [Environment] Running command (Java 8): mvn help:evaluate -Dexpression=project.properties -q -DforceStdout
+<properties>
+  <activemq.version>5.16.6</activemq.version>
+  <antlr2.version>2.7.7</antlr2.version>
+  <appengine-sdk.version>1.9.98</appengine-sdk.version>
+  <artemis.version>2.19.1</artemis.version>
+  <aspectj.version>1.9.7</aspectj.version>
+  <assertj.version>3.22.0</assertj.version>
+  <atomikos.version>4.0.6</atomikos.version>
+  <awaitility.version>4.2.0</awaitility.version>
+  <build-helper-maven-plugin.version>3.3.0</build-helper-maven-plugin.version>
+  <byte-buddy.version>1.12.23</byte-buddy.version>
+  <cache2k.version>2.6.1.Final</cache2k.version>
+  <caffeine.version>2.9.3</caffeine.version>
+  <cassandra-driver.version>4.14.1</cassandra-driver.version>
+  <classmate.version>1.5.1</classmate.version>
+  <commons-codec.version>1.15</commons-codec.version>
+  <commons-dbcp2.version>2.9.0</commons-dbcp2.version>
+  <commons-lang3.version>3.12.0</commons-lang3.version>
+  <commons-pool.version>1.6</commons-pool.version>
+  <commons-pool2.version>2.11.1</commons-pool2.version>
+  <couchbase-client.version>3.3.4</couchbase-client.version>
+  <db2-jdbc.version>11.5.8.0</db2-jdbc.version>
+  <dependency-management-plugin.version>1.0.15.RELEASE</dependency-management-plugin.version>
+  <derby.version>10.14.2.0</derby.version>
+  <dropwizard-metrics.version>4.2.18</dropwizard-metrics.version>
+  <ehcache.version>2.10.9.2</ehcache.version>
+  <ehcache3.version>3.10.8</ehcache3.version>
+  <elasticsearch.version>7.17.10</elasticsearch.version>
+  <embedded-mongo.version>3.4.11</embedded-mongo.version>
+  <flyway.version>8.5.13</flyway.version>
+  <freemarker.version>2.3.32</freemarker.version>
+  <git-commit-id-plugin.version>4.9.10</git-commit-id-plugin.version>
+  <glassfish-el.version>3.0.4</glassfish-el.version>
+  <glassfish-jaxb.version>2.3.8</glassfish-jaxb.version>
+  <glassfish-jstl.version>1.2.6</glassfish-jstl.version>
+  <graphql-java.version>18.5</graphql-java.version>
+  <groovy.version>3.0.17</groovy.version>
+  <gson.version>2.9.1</gson.version>
+  <h2.version>2.1.214</h2.version>
+  <hamcrest.version>2.2</hamcrest.version>
+  <hazelcast-hibernate5.version>2.2.1</hazelcast-hibernate5.version>
+  <hazelcast.version>5.1.6</hazelcast.version>
+  <hibernate-validator.version>6.2.5.Final</hibernate-validator.version>
+  <hibernate.version>5.6.15.Final</hibernate.version>
+  <hikaricp.version>4.0.3</hikaricp.version>
+  <hsqldb.version>2.5.2</hsqldb.version>
+  <htmlunit.version>2.60.0</htmlunit.version>
+  <httpasyncclient.version>4.1.5</httpasyncclient.version>
+  <httpclient.version>4.5.14</httpclient.version>
+  <httpclient5.version>5.1.4</httpclient5.version>
+  <httpcore.version>4.4.16</httpcore.version>
+  <httpcore5.version>5.1.5</httpcore5.version>
+  <infinispan.version>13.0.15.Final</infinispan.version>
+  <influxdb-java.version>2.22</influxdb-java.version>
+  <jackson-bom.version>2.13.5</jackson-bom.version>
+  <jakarta-activation.version>1.2.2</jakarta-activation.version>
+  <jakarta-annotation.version>1.3.5</jakarta-annotation.version>
+  <jakarta-jms.version>2.0.3</jakarta-jms.version>
+  <jakarta-json-bind.version>1.0.2</jakarta-json-bind.version>
+  <jakarta-json.version>1.1.6</jakarta-json.version>
+  <jakarta-mail.version>1.6.7</jakarta-mail.version>
+  <jakarta-management.version>1.1.4</jakarta-management.version>
+  <jakarta-persistence.version>2.2.3</jakarta-persistence.version>
+  <jakarta-servlet-jsp-jstl.version>1.2.7</jakarta-servlet-jsp-jstl.version>
+  <jakarta-servlet.version>4.0.4</jakarta-servlet.version>
+  <jakarta-transaction.version>1.3.3</jakarta-transaction.version>
+  <jakarta-validation.version>2.0.2</jakarta-validation.version>
+  <jakarta-websocket.version>1.1.2</jakarta-websocket.version>
+  <jakarta-ws-rs.version>2.1.6</jakarta-ws-rs.version>
+  <jakarta-xml-bind.version>2.3.3</jakarta-xml-bind.version>
+  <jakarta-xml-soap.version>1.4.2</jakarta-xml-soap.version>
+  <jakarta-xml-ws.version>2.3.3</jakarta-xml-ws.version>
+  <janino.version>3.1.9</janino.version>
+  <java.version>1.8</java.version>
+  <javax-activation.version>1.2.0</javax-activation.version>
+  <javax-annotation.version>1.3.2</javax-annotation.version>
+  <javax-cache.version>1.1.1</javax-cache.version>
+  <javax-jaxb.version>2.3.1</javax-jaxb.version>
+  <javax-jaxws.version>2.3.1</javax-jaxws.version>
+  <javax-jms.version>2.0.1</javax-jms.version>
+  <javax-json.version>1.1.4</javax-json.version>
+  <javax-jsonb.version>1.0</javax-jsonb.version>
+  <javax-mail.version>1.6.2</javax-mail.version>
+  <javax-money.version>1.1</javax-money.version>
+  <javax-persistence.version>2.2</javax-persistence.version>
+  <javax-transaction.version>1.3</javax-transaction.version>
+  <javax-validation.version>2.0.1.Final</javax-validation.version>
+  <javax-websocket.version>1.1</javax-websocket.version>
+  <jaxen.version>1.2.0</jaxen.version>
+  <jaybird.version>4.0.9.java8</jaybird.version>
+  <jboss-logging.version>3.4.3.Final</jboss-logging.version>
+  <jdom2.version>2.0.6.1</jdom2.version>
+  <jedis.version>3.8.0</jedis.version>
+  <jersey.version>2.35</jersey.version>
+  <jetty-el.version>9.0.52</jetty-el.version>
+  <jetty-jsp.version>2.2.0.v201112011158</jetty-jsp.version>
+  <jetty-reactive-httpclient.version>1.1.14</jetty-reactive-httpclient.version>
+  <jetty.version>9.4.51.v20230217</jetty.version>
+  <jmustache.version>1.15</jmustache.version>
+  <johnzon.version>1.2.20</johnzon.version>
+  <jolokia.version>1.7.2</jolokia.version>
+  <jooq.version>3.14.16</jooq.version>
+  <json-path.version>2.7.0</json-path.version>
+  <json-smart.version>2.4.11</json-smart.version>
+  <jsonassert.version>1.5.1</jsonassert.version>
+  <jstl.version>1.2</jstl.version>
+  <jtds.version>1.3.1</jtds.version>
+  <junit-jupiter.version>5.8.2</junit-jupiter.version>
+  <junit.version>4.13.2</junit.version>
+  <kafka.version>3.1.2</kafka.version>
+  <kotlin-coroutines.version>1.6.4</kotlin-coroutines.version>
+  <kotlin.version>1.6.21</kotlin.version>
+  <lettuce.version>6.1.10.RELEASE</lettuce.version>
+  <liquibase.version>4.9.1</liquibase.version>
+  <log4j2.version>2.17.2</log4j2.version>
+  <logback.version>1.2.12</logback.version>
+  <lombok.version>1.18.26</lombok.version>
+  <mariadb.version>3.0.10</mariadb.version>
+  <maven-antrun-plugin.version>3.0.0</maven-antrun-plugin.version>
+  <maven-assembly-plugin.version>3.3.0</maven-assembly-plugin.version>
+  <maven-clean-plugin.version>3.2.0</maven-clean-plugin.version>
+  <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
+  <maven-dependency-plugin.version>3.3.0</maven-dependency-plugin.version>
+  <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
+  <maven-enforcer-plugin.version>3.0.0</maven-enforcer-plugin.version>
+  <maven-failsafe-plugin.version>2.22.2</maven-failsafe-plugin.version>
+  <maven-help-plugin.version>3.2.0</maven-help-plugin.version>
+  <maven-install-plugin.version>2.5.2</maven-install-plugin.version>
+  <maven-invoker-plugin.version>3.2.2</maven-invoker-plugin.version>
+  <maven-jar-plugin.version>3.2.2</maven-jar-plugin.version>
+  <maven-javadoc-plugin.version>3.4.1</maven-javadoc-plugin.version>
+  <maven-resources-plugin.version>3.2.0</maven-resources-plugin.version>
+  <maven-shade-plugin.version>3.3.0</maven-shade-plugin.version>
+  <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
+  <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+  <maven-war-plugin.version>3.3.2</maven-war-plugin.version>
+  <maven.compiler.source>1.8</maven.compiler.source>
+  <maven.compiler.target>1.8</maven.compiler.target>
+  <micrometer.version>1.9.11</micrometer.version>
+  <mockito.version>4.5.1</mockito.version>
+  <mongodb.version>4.6.1</mongodb.version>
+  <mssql-jdbc.version>10.2.3.jre8</mssql-jdbc.version>
+  <mysql.version>8.0.33</mysql.version>
+  <nekohtml.version>1.9.22</nekohtml.version>
+  <neo4j-java-driver.version>4.4.11</neo4j-java-driver.version>
+  <netty.version>4.1.92.Final</netty.version>
+  <okhttp.version>4.9.3</okhttp.version>
+  <oracle-database.version>21.5.0.0</oracle-database.version>
+  <pooled-jms.version>1.2.4</pooled-jms.version>
+  <postgresql.version>42.3.8</postgresql.version>
+  <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  <prometheus-client.version>0.15.0</prometheus-client.version>
+  <quartz.version>2.3.2</quartz.version>
+  <querydsl.version>5.0.0</querydsl.version>
+  <r2dbc-bom.version>Borca-SR2</r2dbc-bom.version>
+  <rabbit-amqp-client.version>5.14.2</rabbit-amqp-client.version>
+  <rabbit-stream-client.version>0.5.0</rabbit-stream-client.version>
+  <reactive-streams.version>1.0.4</reactive-streams.version>
+  <reactor-bom.version>2020.0.32</reactor-bom.version>
+  <resource.delimiter>@</resource.delimiter>
+  <rest-assured.version>4.5.1</rest-assured.version>
+  <rsocket.version>1.1.3</rsocket.version>
+  <rxjava-adapter.version>1.2.1</rxjava-adapter.version>
+  <rxjava.version>1.3.8</rxjava.version>
+  <rxjava2.version>2.2.21</rxjava2.version>
+  <saaj-impl.version>1.5.3</saaj-impl.version>
+  <selenium-htmlunit.version>3.61.0</selenium-htmlunit.version>
+  <selenium.version>4.1.4</selenium.version>
+  <sendgrid.version>4.9.3</sendgrid.version>
+  <servlet-api.version>4.0.1</servlet-api.version>
+  <slf4j.version>1.7.36</slf4j.version>
+  <snakeyaml.version>1.30</snakeyaml.version>
+  <solr.version>8.11.2</solr.version>
+  <spring-amqp.version>2.4.12</spring-amqp.version>
+  <spring-batch.version>4.3.8</spring-batch.version>
+  <spring-data-bom.version>2021.2.12</spring-data-bom.version>
+  <spring-framework.version>5.3.27</spring-framework.version>
+  <spring-graphql.version>1.0.4</spring-graphql.version>
+  <spring-hateoas.version>1.5.4</spring-hateoas.version>
+  <spring-integration.version>5.5.18</spring-integration.version>
+  <spring-kafka.version>2.8.11</spring-kafka.version>
+  <spring-ldap.version>2.4.1</spring-ldap.version>
+  <spring-restdocs.version>2.0.7.RELEASE</spring-restdocs.version>
+  <spring-retry.version>1.3.4</spring-retry.version>
+  <spring-security.version>5.7.8</spring-security.version>
+  <spring-session-bom.version>2021.2.1</spring-session-bom.version>
+  <spring-ws.version>3.1.6</spring-ws.version>
+  <sqlite-jdbc.version>3.36.0.3</sqlite-jdbc.version>
+  <sun-mail.version>1.6.7</sun-mail.version>
+  <thymeleaf-extras-data-attribute.version>2.0.1</thymeleaf-extras-data-attribute.version>
+  <thymeleaf-extras-java8time.version>3.0.4.RELEASE</thymeleaf-extras-java8time.version>
+  <thymeleaf-extras-springsecurity.version>3.0.5.RELEASE</thymeleaf-extras-springsecurity.version>
+  <thymeleaf-layout-dialect.version>3.0.0</thymeleaf-layout-dialect.version>
+  <thymeleaf.version>3.0.15.RELEASE</thymeleaf.version>
+  <tomcat.version>9.0.75</tomcat.version>
+  <unboundid-ldapsdk.version>6.0.8</unboundid-ldapsdk.version>
+  <undertow.version>2.2.24.Final</undertow.version>
+  <versions-maven-plugin.version>2.10.0</versions-maven-plugin.version>
+  <webjars-locator-core.version>0.50</webjars-locator-core.version>
+  <wsdl4j.version>1.6.3</wsdl4j.version>
+  <xml-maven-plugin.version>1.0.2</xml-maven-plugin.version>
+  <xmlunit2.version>2.9.1</xmlunit2.version>
+</properties>2026-01-08T15:59:17.085Z [INFO] [MavenBuildTool] Java version found in project properties: 8
+2026-01-08T15:59:17.090Z [INFO] validateAndUpdateTargets, targets: [object Object]
+2026-01-08T15:59:17.094Z [INFO] No target dependencies found for Spring Boot. Skipping target dependency validation
+2026-01-08T15:59:17.095Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Spring Boot
+2026-01-08T15:59:17.095Z [WARN] No source dependencies found for Spring Framework. Skipping target dependency validation
+2026-01-08T15:59:17.097Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Spring Framework
+2026-01-08T15:59:17.098Z [WARN] No source dependencies found for Spring Security. Skipping target dependency validation
+2026-01-08T15:59:17.099Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Spring Security
+2026-01-08T15:59:17.100Z [WARN] No source dependencies found for Jakarta EE. Skipping target dependency validation
+2026-01-08T15:59:17.101Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Jakarta EE
+2026-01-08T15:59:17.102Z [WARN] No source dependencies found for JUnit. Skipping target dependency validation
+2026-01-08T15:59:17.103Z [INFO] validateAndUpdateTargets, targets: [object Object], group:JUnit
+2026-01-08T15:59:17.107Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Java
+2026-01-08T15:59:17.108Z [INFO] validateAndUpdateTargets, userTargets: [object Object]
+2026-01-08T15:59:17.112Z [INFO] Target Java version: 21
+2026-01-08T15:59:17.117Z [INFO] [Environment] Running command (Java 21): java -version
+java version "21.0.1" 2023-10-17 LTS
+Java(TM) SE Runtime Environment (build 21.0.1+12-LTS-29)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.1+12-LTS-29, mixed mode, sharing)
+2026-01-08T15:59:17.507Z [INFO] [JdkEnvironment] Got real Java version: 21.0.1
+2026-01-08T15:59:17.508Z [INFO] Target JDK: {"name":"java","path":"C:\\Program Files\\Java\\jdk-21\\bin","version":"21"}
+2026-01-08T15:59:17.509Z [INFO] Upgrade options: {
+  "workingBranch": "appmod/java-upgrade-20260108154040",
+  "runTests": true,
+  "target": {
+    "javaVersion": "21",
+    "dependencies": [
+      {
+        "name": "Java",
+        "groupId": "java",
+        "artifactId": "*",
+        "version": "21",
+        "recipes": [
+          {
+            "id": "com.microsoft.java.UpgradeToJava21",
+            "name": "Upgrade from Java 8 to Java 21",
+            "description": "Migrate Java 8 to Java 21.",
+            "url": "https://docs.openrewrite.org/recipes/java/migrate/UpgradeToJava21",
+            "content": "\n- Apply OpenRewrite recipe `org.openrewrite.java.migrate.UpgradeToJava21` in recipe lib `org.openrewrite.recipe:rewrite-migrate-java:2.31.1` to make initial code changes for upgrading Java project to Java 21 from any previous version larger than Java 8.\n"
+          }
+        ],
+        "supportedSources": [
+          {
+            "groupId": "java",
+            "artifactId": "*",
+            "version": ">=8 <21"
+          },
+          {
+            "name": "Java",
+            "groupId": "java",
+            "artifactId": "*",
+            "version": "11",
+            "recipes": [
+              {
+                "id": "com.microsoft.java.UpgradeToJava11",
+                "name": "Upgrade from Java 8 to Java 11",
+                "description": "Migrate Java 8 to Java 11.",
+                "url": "https://docs.openrewrite.org/recipes/java/migrate/java8tojava11",
+                "content": "\n- Apply OpenRewrite recipe `org.openrewrite.java.migrate.Java8toJava11` in recipe lib `org.openrewrite.recipe:rewrite-migrate-java:2.31.1` to make initial code changes for upgrading Java project to Java 11 from any previous version larger than Java 8.\n"
+              }
+            ],
+            "supportedSources": [
+              {
+                "groupId": "java",
+                "artifactId": "*",
+                "version": ">=8 <11"
+              }
+            ],
+            "effects": [
+              {
+                "groupId": "java",
+                "artifactId": "*",
+                "version": "11"
+              }
+            ]
+          },
+          {
+            "name": "Java",
+            "groupId": "java",
+            "artifactId": "*",
+            "version": "17",
+            "recipes": [
+              {
+                "id": "com.microsoft.java.UpgradeToJava17",
+                "name": "Upgrade from Java 8 to Java 17",
+                "description": "Migrate Java 8 to Java 17.",
+                "url": "https://docs.openrewrite.org/recipes/java/migrate/UpgradeToJava17",
+                "content": "\n- Apply OpenRewrite recipe `org.openrewrite.java.migrate.UpgradeToJava17` in recipe lib `org.openrewrite.recipe:rewrite-migrate-java:2.31.1` to make initial code changes for upgrading Java project to Java 17 from any previous version larger than Java 8.\n"
+              }
+            ],
+            "supportedSources": [
+              {
+                "groupId": "java",
+                "artifactId": "*",
+                "version": ">=8 <17"
+              },
+              {
+                "name": "Java",
+                "groupId": "java",
+                "artifactId": "*",
+                "version": "11",
+                "recipes": [
+                  {
+                    "id": "com.microsoft.java.UpgradeToJava11",
+                    "name": "Upgrade from Java 8 to Java 11",
+                    "description": "Migrate Java 8 to Java 11.",
+                    "url": "https://docs.openrewrite.org/recipes/java/migrate/java8tojava11",
+                    "content": "\n- Apply OpenRewrite recipe `org.openrewrite.java.migrate.Java8toJava11` in recipe lib `org.openrewrite.recipe:rewrite-migrate-java:2.31.1` to make initial code changes for upgrading Java project to Java 11 from any previous version larger than Java 8.\n"
+                  }
+                ],
+                "supportedSources": [
+                  {
+                    "groupId": "java",
+                    "artifactId": "*",
+                    "version": ">=8 <11"
+                  }
+                ],
+                "effects": [
+                  {
+                    "groupId": "java",
+                    "artifactId": "*",
+                    "version": "11"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "groupId": "java",
+                "artifactId": "*",
+                "version": "17"
+              }
+            ]
+          }
+        ],
+        "effects": [
+          {
+            "groupId": "java",
+            "artifactId": "*",
+            "version": "21"
+          }
+        ]
+      }
+    ],
+    "jdk": {
+      "name": "java",
+      "path": "C:\\Program Files\\Java\\jdk-21\\bin",
+      "version": "21"
+    }
+  },
+  "guidelines": ""
+}
+2026-01-08T15:59:17.511Z [INFO] Project configuration and upgrade options initialized successfully.
+2026-01-08T15:59:17.763Z [INFO] working tree is cleaned.
+2026-01-08T15:59:17.765Z [INFO] Start prechecking...
+2026-01-08T16:00:24.364Z [INFO] Precheck completed successfully.
+2026-01-08T16:00:24.622Z [INFO] master
+
+2026-01-08T16:00:24.647Z [INFO] Create or reuse the working branch appmod/java-upgrade-20260108154040
+2026-01-08T16:00:25.199Z [ERROR] Switched to a new branch 'appmod/java-upgrade-20260108154040'
+
+2026-01-08T16:00:25.217Z [INFO] Switched the working branch from master to appmod/java-upgrade-20260108154040
+2026-01-08T16:00:25.218Z [INFO] Git working branch is set up.
+2026-01-08T16:00:25.418Z [INFO] 7e02ceb062e4dfd202b68cd7fbc7702996ef1c80
+

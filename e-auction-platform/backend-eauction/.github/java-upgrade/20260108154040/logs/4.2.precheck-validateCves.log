@@ -1,0 +1,14 @@
+2026-01-08T15:59:37.154Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-web:2.7.12
+  - java:*:8...
+2026-01-08T15:59:37.155Z [INFO] getting gitHub access token...
+2026-01-08T15:59:49.704Z [INFO] Processing batch 1/1, size: 2
+2026-01-08T15:59:49.720Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-web:2.7.12",
+  "java:*:8"
+]
+2026-01-08T15:59:50.192Z [INFO] Fetched 0 total advisories across all pages
+2026-01-08T15:59:50.193Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-01-08T15:59:50.194Z [INFO] done getting 0 CVEs for 2 dependencies
+2026-01-08T15:59:50.195Z [INFO] calculating patched version by dep...
+2026-01-08T15:59:50.195Z [INFO] finished getting CVEs for dependencies.

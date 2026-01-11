@@ -1,0 +1,283 @@
+2026-01-08T15:40:40.472Z [INFO] ----------------------invoke generate_upgrade_plan----------------------
+2026-01-08T15:40:40.474Z [INFO] [Tool.invoke]({name: generate_upgrade_plan, input: {
+  "projectPath": "C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction",
+  "targetJavaVersion": "21"
+}}).
+2026-01-08T15:40:40.478Z [INFO] [Plan.tryStartTask]({tool:generate_upgrade_plan, nextTask:{type:undefined, tool:undefined}}
+2026-01-08T15:40:40.480Z [INFO] [Plan.tryStartTask]: no next task, create new one.
+2026-01-08T15:40:40.482Z [INFO] [Plan.createTaskAtStart]({tool: generate_upgrade_plan, input: {
+  "projectPath": "C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction",
+  "targetJavaVersion": "21",
+  "sessionId": "20260108154040"
+}}).
+2026-01-08T15:40:40.484Z [INFO] [Plan.tryStartTask]: starting task generatePlan
+2026-01-08T15:40:40.485Z [INFO] [Task.start](): Starting task generatePlan
+2026-01-08T15:40:40.488Z [INFO] [Task.start](1): Started task generatePlan
+2026-01-08T15:40:40.496Z [INFO] [Tool.invoke] validate GitHub Copilot license.
+2026-01-08T15:40:40.498Z [INFO] [Tool.invoke] do pre-invoke.
+2026-01-08T15:40:40.499Z [INFO] [Tool.invoke] do invoke.
+2026-01-08T15:41:38.043Z [INFO] Project dependencies loaded: [
+  "org.springframework.boot:spring-boot-starter-web:2.7.12:jar"
+]
+2026-01-08T15:41:38.044Z [INFO] Project modules loaded: [
+  "com.eauction:backend-eauction:0.0.1-SNAPSHOT"
+]
+2026-01-08T15:41:38.259Z [INFO] [Tool.invoke]({result: {
+  "message": "\nA new upgrade session has been created with ID: **20260108154040** (You must remember this session ID to use it invoke other tools in followup steps).\nUpgrade plan is generated successfully and saved at \"C:\\Users\\DELL\\Desktop\\bidspark\\e-auction-platform\\backend-eauction\\.github\\java-upgrade\\20260108154040\\plan.md\"\n\n"
+}}).
+2026-01-08T15:41:38.262Z [INFO] [Plan.completeTask](task:{id:1, type:generatePlan}, result:{
+  "message": "\nA new upgrade session has been created with ID: **20260108154040** (You must remember this session ID to use it invoke other tools in followup steps).\nUpgrade plan is generated successfully and saved at \"C:\\Users\\DELL\\Desktop\\bidspark\\e-auction-platform\\backend-eauction\\.github\\java-upgrade\\20260108154040\\plan.md\"\n\n"
+})
+2026-01-08T15:41:38.264Z [INFO] [Task.complete](1): Completing task generatePlan
+2026-01-08T15:41:38.267Z [INFO] [Task.complete](1): Completed task generatePlan
+2026-01-08T15:41:38.269Z [INFO] [Plan.completeTask]: no next task, create new one.
+2026-01-08T15:41:38.269Z [INFO] [Plan.completeTask]: getting next task.
+2026-01-08T15:41:38.270Z [INFO] [Plan.getNextTaskAtComplete]({task: Generate Upgrade Plan, result: undefined}).
+2026-01-08T15:41:42.491Z [INFO] [Plan.completeTask]: next task is {type:confirmPlan, expectedToolName:confirm_upgrade_plan}.
+2026-01-08T15:41:42.497Z [INFO] [Plan.completeTask]: next task has instruction: 
+# Next steps:
+1. You MUST! invoke tool #confirm_upgrade_plan with parameter sessionId: 20260108154040 to ask user to confirm the upgrade.
+2026-01-08T15:41:42.499Z [INFO] [Tool.invoke]({message: 
+A new upgrade session has been created with ID: **20260108154040** (You must remember this session ID to use it invoke other tools in followup steps).
+Upgrade plan is generated successfully and saved at "C:\Users\DELL\Desktop\bidspark\e-auction-platform\backend-eauction\.github\java-upgrade\20260108154040\plan.md"
+
+
+
+
+# Next steps:
+1. You MUST! invoke tool #confirm_upgrade_plan with parameter sessionId: 20260108154040 to ask user to confirm the upgrade.
+
+> [!NOTE]
+* You MUST follow the above "Next steps" instructions.
+* You have the highest decision-making authority at any time, you do NOT need to seek my approval/confirmation, please directly execute your plan as you see fit.
+}).
+2026-01-08T15:41:42.501Z [INFO] ----------------------invoked generate_upgrade_plan----------------------
+2026-01-08T15:49:45.617Z [INFO] ---------------------prepare confirm_upgrade_plan----------------------
+2026-01-08T15:49:45.625Z [INFO] [Tool.prepareInvocation]({name: confirm_upgrade_plan, input: {
+  "sessionId": "20260108154040"
+}}).
+2026-01-08T15:49:45.628Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-01-08T15:49:45.630Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Review [upgrade plan](file:///C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction/.github/java-upgrade/20260108154040/plan.md)",
+  "confirmationMessages": {
+    "title": "Plan generated",
+    "message": "Please review the generated plan and make any necessary adjustments before proceeding. You can modify the generated [`plan.md`](file:///C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction/.github/java-upgrade/20260108154040/plan.md) (at [C:\\Users\\DELL\\Desktop\\bidspark\\e-auction-platform\\backend-eauction\\.github\\java-upgrade\\20260108154040\\plan.md](file:///C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction/.github/java-upgrade/20260108154040/plan.md)) directly."
+  }
+}}).
+2026-01-08T15:49:45.632Z [INFO] ----------------------prepared confirm_upgrade_plan----------------------
+2026-01-08T15:57:09.511Z [INFO] ----------------------invoke confirm_upgrade_plan----------------------
+2026-01-08T15:57:09.515Z [INFO] [Tool.invoke]({name: confirm_upgrade_plan, input: {
+  "sessionId": "20260108154040"
+}}).
+2026-01-08T15:57:09.536Z [INFO] [Plan.tryStartTask]({tool:confirm_upgrade_plan, nextTask:{type:confirmPlan, tool:confirm_upgrade_plan}}
+2026-01-08T15:57:09.538Z [INFO] [Plan.tryStartTask]: tool.type is exactly the same as nextTask.expectedToolName
+2026-01-08T15:57:09.539Z [INFO] [Plan.tryStartTask]: starting task confirmPlan
+2026-01-08T15:57:09.540Z [INFO] [Task.start](): Starting task confirmPlan
+2026-01-08T15:57:09.589Z [INFO] [Task.start](2): Started task confirmPlan
+2026-01-08T15:57:09.590Z [INFO] [Tool.invoke] validate GitHub Copilot license.
+2026-01-08T15:57:09.593Z [INFO] [Tool.invoke] do pre-invoke.
+2026-01-08T15:57:09.597Z [INFO] [Tool.invoke] do invoke.
+2026-01-08T15:57:09.601Z [INFO] [Tool.invoke]({result: {
+  "message": "Generated plan is reviewed and confirmed by the user! the upgrade process will start now and be tracked in markdown file: C:\\Users\\DELL\\Desktop\\bidspark\\e-auction-platform\\backend-eauction\\.github\\java-upgrade\\20260108154040\\progress.md."
+}}).
+2026-01-08T15:57:09.603Z [INFO] [Plan.completeTask](task:{id:2, type:confirmPlan}, result:{
+  "message": "Generated plan is reviewed and confirmed by the user! the upgrade process will start now and be tracked in markdown file: C:\\Users\\DELL\\Desktop\\bidspark\\e-auction-platform\\backend-eauction\\.github\\java-upgrade\\20260108154040\\progress.md."
+})
+2026-01-08T15:57:09.604Z [INFO] [Task.complete](2): Completing task confirmPlan
+2026-01-08T15:57:09.610Z [INFO] [Task.complete](2): Completed task confirmPlan
+2026-01-08T15:57:09.611Z [INFO] [Plan.completeTask]: no next task, create new one.
+2026-01-08T15:57:09.612Z [INFO] [Plan.completeTask]: getting next task.
+2026-01-08T15:57:09.613Z [INFO] [Plan.getNextTaskAtComplete]({task: Confirm Upgrade Plan, result: undefined}).
+2026-01-08T15:57:11.625Z [INFO] [Plan.completeTask]: next task is {type:setupEnvironment, expectedToolName:setup_upgrade_environment}.
+2026-01-08T15:57:11.628Z [INFO] [Plan.completeTask]: next task has instruction: 
+# Next steps:
+1. You MUST! invoke tool #setup_upgrade_environment with parameter sessionId: 20260108154040 to setup the development environment for upgrading this Java project.
+2026-01-08T15:57:11.629Z [INFO] [Tool.invoke]({message: Generated plan is reviewed and confirmed by the user! the upgrade process will start now and be tracked in markdown file: C:\Users\DELL\Desktop\bidspark\e-auction-platform\backend-eauction\.github\java-upgrade\20260108154040\progress.md.
+
+
+# Next steps:
+1. You MUST! invoke tool #setup_upgrade_environment with parameter sessionId: 20260108154040 to setup the development environment for upgrading this Java project.
+
+> [!NOTE]
+* You MUST follow the above "Next steps" instructions.
+* You have the highest decision-making authority at any time, you do NOT need to seek my approval/confirmation, please directly execute your plan as you see fit.
+}).
+2026-01-08T15:57:11.634Z [INFO] ----------------------invoked confirm_upgrade_plan----------------------
+2026-01-08T15:57:27.378Z [INFO] ---------------------prepare setup_upgrade_environment----------------------
+2026-01-08T15:57:27.379Z [INFO] [Tool.prepareInvocation]({name: setup_upgrade_environment, input: {
+  "sessionId": "20260108154040"
+}}).
+2026-01-08T15:57:27.381Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-01-08T15:57:27.383Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Setup Development Environment"
+}}).
+2026-01-08T15:57:27.384Z [INFO] ----------------------prepared setup_upgrade_environment----------------------
+2026-01-08T15:57:27.517Z [INFO] ----------------------invoke setup_upgrade_environment----------------------
+2026-01-08T15:57:27.518Z [INFO] [Tool.invoke]({name: setup_upgrade_environment, input: {
+  "sessionId": "20260108154040"
+}}).
+2026-01-08T15:57:27.520Z [INFO] [Plan.tryStartTask]({tool:setup_upgrade_environment, nextTask:{type:setupEnvironment, tool:setup_upgrade_environment}}
+2026-01-08T15:57:27.521Z [INFO] [Plan.tryStartTask]: tool.type is exactly the same as nextTask.expectedToolName
+2026-01-08T15:57:27.522Z [INFO] [Plan.tryStartTask]: starting task setupEnvironment
+2026-01-08T15:57:27.523Z [INFO] [Task.start](): Starting task setupEnvironment
+2026-01-08T15:57:27.526Z [INFO] [Task.start](3): Started task setupEnvironment
+2026-01-08T15:57:27.527Z [INFO] [Tool.invoke] validate GitHub Copilot license.
+2026-01-08T15:57:27.528Z [INFO] [Tool.invoke] do pre-invoke.
+2026-01-08T15:57:27.529Z [INFO] [Tool.invoke] do invoke.
+2026-01-08T15:59:17.771Z [INFO] ---------------------prepare precheck_for_upgrade----------------------
+2026-01-08T15:59:17.772Z [INFO] [Tool.prepareInvocation]({name: precheck_for_upgrade, input: {
+  "sessionId": "20260108154040"
+}}).
+2026-01-08T15:59:17.773Z [INFO] [Tool.prepareInvocation] do prepare invocation.
+2026-01-08T15:59:17.775Z [INFO] [Tool.prepareInvocation]({result: {
+  "invocationMessage": "Precheck"
+}}).
+2026-01-08T15:59:17.776Z [INFO] ----------------------prepared precheck_for_upgrade----------------------
+2026-01-08T15:59:17.997Z [INFO] ----------------------invoke precheck_for_upgrade----------------------
+2026-01-08T15:59:17.998Z [INFO] [Tool.invoke]({name: precheck_for_upgrade, input: {
+  "sessionId": "20260108154040"
+}}).
+2026-01-08T15:59:18.000Z [INFO] [Plan.tryStartTask]({tool:precheck_for_upgrade, nextTask:{type:undefined, tool:undefined}}
+2026-01-08T15:59:18.001Z [INFO] [Plan.tryStartTask]: no next task, create new one.
+2026-01-08T15:59:18.002Z [INFO] [Plan.createTaskAtStart]({tool: precheck_for_upgrade, input: {
+  "sessionId": "20260108154040"
+}}).
+2026-01-08T15:59:18.003Z [INFO] [Plan.tryStartTask]: starting task detached
+2026-01-08T15:59:18.004Z [INFO] [Task.start](): Starting task detached
+2026-01-08T15:59:18.006Z [INFO] [Task.start](): Started task detached
+2026-01-08T15:59:18.007Z [INFO] [Tool.invoke] validate GitHub Copilot license.
+2026-01-08T15:59:18.008Z [INFO] [Tool.invoke] do pre-invoke.
+2026-01-08T15:59:18.009Z [INFO] [Tool.invoke] do invoke.
+2026-01-08T15:59:18.011Z [INFO] [Task.start](): Starting task precheck
+2026-01-08T15:59:18.016Z [INFO] [Project backend-eauction]: getting dependencies promise.
+2026-01-08T15:59:18.020Z [INFO] [Task.start](): Starting task precheck-buildProject
+2026-01-08T15:59:18.057Z [INFO] [Task.start](4): Started task precheck
+2026-01-08T15:59:18.058Z [INFO] [Task.start](4.1): Started task precheck-buildProject
+2026-01-08T15:59:37.140Z [INFO] [Project backend-eauction]: Compilation errors of project backend-eauction is updated: 0 -> 0
+2026-01-08T15:59:37.142Z [INFO] [Task.complete](4.1): Completing task precheck-buildProject
+2026-01-08T15:59:37.149Z [INFO] [Task.start](): Starting task precheck-validateCves
+2026-01-08T15:59:37.157Z [INFO] [Task.complete](4.1): Completed task precheck-buildProject
+2026-01-08T15:59:37.158Z [INFO] [Task.start](4.2): Started task precheck-validateCves
+2026-01-08T15:59:50.200Z [INFO] [Task.complete](4.2): Completing task precheck-validateCves
+2026-01-08T15:59:50.204Z [INFO] [Task.start](): Starting task precheck-runTests
+2026-01-08T15:59:50.230Z [INFO] [Task.complete](4.2): Completed task precheck-validateCves
+2026-01-08T15:59:50.231Z [INFO] [Task.start](4.3): Started task precheck-runTests
+2026-01-08T16:00:24.206Z [INFO] [Project backend-eauction]: Test result of project backend-eauction is updated: 0 -> 0
+2026-01-08T16:00:24.210Z [INFO] [Task.complete](4.3): Completing task precheck-runTests
+2026-01-08T16:00:24.217Z [INFO] [Task.complete](4.3): Completed task precheck-runTests
+2026-01-08T16:00:24.221Z [INFO] [Task.complete](4): Completing task precheck
+2026-01-08T16:00:24.223Z [INFO] [Tool.invoke]({result: {
+  "message": "Done prechecking"
+}}).
+2026-01-08T16:00:24.224Z [INFO] [Plan.completeTask](task:{id:<unknown>, type:detached}, result:{
+  "message": "Done prechecking"
+})
+2026-01-08T16:00:24.225Z [INFO] [Task.complete](): Completing task detached
+2026-01-08T16:00:24.226Z [INFO] [Task.complete](4): Completed task precheck
+2026-01-08T16:00:24.227Z [INFO] [Task.complete](): Completed task detached
+2026-01-08T16:00:24.229Z [INFO] [Plan.completeTask]: no next task, create new one.
+2026-01-08T16:00:24.230Z [INFO] [Plan.completeTask]: getting next task.
+2026-01-08T16:00:24.231Z [INFO] [Plan.getNextTaskAtComplete]({task: [Detached] precheck_for_upgrade, result: undefined}).
+2026-01-08T16:00:24.232Z [INFO] [Plan.completeTask]: next task is {type:undefined, expectedToolName:undefined}.
+2026-01-08T16:00:24.233Z [INFO] [Plan.completeTask]: next task has no instruction. Just return Done prechecking
+2026-01-08T16:00:24.234Z [INFO] [Tool.invoke]({message: Done prechecking
+}).
+2026-01-08T16:00:24.234Z [INFO] ----------------------invoked precheck_for_upgrade----------------------
+2026-01-08T16:00:25.440Z [INFO] [Tool.invoke]({result: {
+  "message": "\nThe upgrade plan at C:\\Users\\DELL\\Desktop\\bidspark\\e-auction-platform\\backend-eauction\\.github\\java-upgrade\\20260108154040\\plan.md has been updated and confirmed.\n\n# Confirmed final upgrade goal:\n- upgrade `Java` to *21*\n\n\n"
+}}).
+2026-01-08T16:00:25.441Z [INFO] [Plan.completeTask](task:{id:3, type:setupEnvironment}, result:{
+  "message": "\nThe upgrade plan at C:\\Users\\DELL\\Desktop\\bidspark\\e-auction-platform\\backend-eauction\\.github\\java-upgrade\\20260108154040\\plan.md has been updated and confirmed.\n\n# Confirmed final upgrade goal:\n- upgrade `Java` to *21*\n\n\n"
+})
+2026-01-08T16:00:25.444Z [INFO] [Task.complete](3): Completing task setupEnvironment
+2026-01-08T16:00:25.451Z [INFO] [Task.complete](3): Completed task setupEnvironment
+2026-01-08T16:00:25.453Z [INFO] [Plan.completeTask]: no next task, create new one.
+2026-01-08T16:00:25.454Z [INFO] [Plan.completeTask]: getting next task.
+2026-01-08T16:00:25.454Z [INFO] [Plan.getNextTaskAtComplete]({task: Setup Development Environment, result: undefined}).
+2026-01-08T16:00:25.456Z [INFO] [Task.start](): Starting task milestone
+2026-01-08T16:00:25.459Z [INFO] [Task.start](5): Started task milestone
+2026-01-08T16:00:25.461Z [INFO] [Plan.startCurrentMilestone]({milestoneTask:{id: 5, title: Upgrade project to use `Java 21`}})
+2026-01-08T16:00:25.465Z [INFO] [Plan.startCurrentMilestone]: this is the first milestone, no previous milestone.
+2026-01-08T16:00:25.467Z [INFO] [Plan.completeTask]: next task is {type:upgradeProjectUsingAgent, expectedToolName:build_java_project}.
+2026-01-08T16:00:25.470Z [INFO] [Plan.completeTask]: next task is an AgentTask, starting it.
+2026-01-08T16:00:25.471Z [INFO] [Task.start](): Starting task upgradeProjectUsingAgent
+2026-01-08T16:00:25.474Z [INFO] [Task.start](5.1): Started task upgradeProjectUsingAgent
+2026-01-08T16:00:25.475Z [INFO] [Plan.completeTask]: next task has instruction: 
+
+# Current Milestone Goal:
+This is the 1st milestone, its goal is:
+- upgrade `Java` to *21*
+
+
+# Next steps:
+1. You **MUST!** identify all the dependencies or code that need upgrading to upgrade `Java` to *21*, and make all necessary changes with any tools you prefer.
+    - Here is some knowledge that you may leverage during the upgrade:
+        - Apply OpenRewrite recipe `org.openrewrite.java.migrate.UpgradeToJava21` in recipe lib `org.openrewrite.recipe:rewrite-migrate-java:2.31.1` to make initial code changes for upgrading Java project to Java 21 from any previous version larger than Java 8.
+    
+2. You **MUST!** remember to invoke tool #build_java_project with sessionId "20260108154040" to validate the changes after performing the upgrade as any code change might introduce new build errors.
+
+# Important Notes:
+- You **MUST** fetch the contents first if guidelines are provided as links.
+- You **MUST** ONLY upgrade the dependencies that are incompatible with the target version of Java/dependencies.
+- You **MUST** ONLY make all necessary code changes to achieve the current milestone goal without any deviation whatsoever.
+- You **MUST** strictly adhere to the current milestone goal but not the final upgrade goal.
+- You **MUST** invoke tool #build_java_project to validate the changes regardless of how confident you are in your code changes. Even if:
+    - You've already built the project before
+    - You believe no new build errors could have been introduced
+    - Previous checks showed no build errors
+- You **MUST** maintain the exact same functionality/behavior logic when making any code changes. You **MUST NOT** change the original code functionality/behavior when making any code changes.
+- "Guidelines" has higher priority than "Knowledge", so when there is any conflict between them, you **MUST** follow the guidelines.
+- OpenRewrite recipes are preferable for upgrading dependencies and making code changes if applicable and provided as knowledge/guidelines.
+    - You **MUST** use the JDK at "C:\Users\DELL\.jdk\jdk-8\bin" and the Maven at "C:\Users\DELL\Downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin" to apply OpenRewrite recipes, so be careful about the environment configuration before running terminal command to apply OpenRewrite recipes.
+    - You should use `org.openrewrite.maven:rewrite-maven-plugin:5.47.3` (for Maven) or `org.openrewrite:plugin:6.28.3` (for Gradle) to apply OpenRewrite recipes if user didn't specify any version in the guidelines.
+    - You **MUST** add "--quiet" parameter to the maven or gradle command when applying OpenRewrite recipes to avoid unnecessary output logs, the recipes are applied successfully as long as there is no error reported in the output.
+    - You'd better use OpenRewrite YAML file (`rewrite.yml`) to configure all the necessary recipes to be applied, which then be referenced as active recipe by the `name` defined in the rewrite.yml when being applied. Remember to place the yaml file at the project root directory.
+    - You **MUST** revert the OpenRewrite related configuration changes you made after applying the recipes to avoid polluting the project.
+
+2026-01-08T16:00:25.476Z [INFO] [Tool.invoke]({message: 
+The upgrade plan at C:\Users\DELL\Desktop\bidspark\e-auction-platform\backend-eauction\.github\java-upgrade\20260108154040\plan.md has been updated and confirmed.
+
+# Confirmed final upgrade goal:
+- upgrade `Java` to *21*
+
+
+
+Now, let's start with the first milestone goal of upgrading the project.
+
+
+# Current Milestone Goal:
+This is the 1st milestone, its goal is:
+- upgrade `Java` to *21*
+
+
+# Next steps:
+1. You **MUST!** identify all the dependencies or code that need upgrading to upgrade `Java` to *21*, and make all necessary changes with any tools you prefer.
+    - Here is some knowledge that you may leverage during the upgrade:
+        - Apply OpenRewrite recipe `org.openrewrite.java.migrate.UpgradeToJava21` in recipe lib `org.openrewrite.recipe:rewrite-migrate-java:2.31.1` to make initial code changes for upgrading Java project to Java 21 from any previous version larger than Java 8.
+    
+2. You **MUST!** remember to invoke tool #build_java_project with sessionId "20260108154040" to validate the changes after performing the upgrade as any code change might introduce new build errors.
+
+# Important Notes:
+- You **MUST** fetch the contents first if guidelines are provided as links.
+- You **MUST** ONLY upgrade the dependencies that are incompatible with the target version of Java/dependencies.
+- You **MUST** ONLY make all necessary code changes to achieve the current milestone goal without any deviation whatsoever.
+- You **MUST** strictly adhere to the current milestone goal but not the final upgrade goal.
+- You **MUST** invoke tool #build_java_project to validate the changes regardless of how confident you are in your code changes. Even if:
+    - You've already built the project before
+    - You believe no new build errors could have been introduced
+    - Previous checks showed no build errors
+- You **MUST** maintain the exact same functionality/behavior logic when making any code changes. You **MUST NOT** change the original code functionality/behavior when making any code changes.
+- "Guidelines" has higher priority than "Knowledge", so when there is any conflict between them, you **MUST** follow the guidelines.
+- OpenRewrite recipes are preferable for upgrading dependencies and making code changes if applicable and provided as knowledge/guidelines.
+    - You **MUST** use the JDK at "C:\Users\DELL\.jdk\jdk-8\bin" and the Maven at "C:\Users\DELL\Downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin" to apply OpenRewrite recipes, so be careful about the environment configuration before running terminal command to apply OpenRewrite recipes.
+    - You should use `org.openrewrite.maven:rewrite-maven-plugin:5.47.3` (for Maven) or `org.openrewrite:plugin:6.28.3` (for Gradle) to apply OpenRewrite recipes if user didn't specify any version in the guidelines.
+    - You **MUST** add "--quiet" parameter to the maven or gradle command when applying OpenRewrite recipes to avoid unnecessary output logs, the recipes are applied successfully as long as there is no error reported in the output.
+    - You'd better use OpenRewrite YAML file (`rewrite.yml`) to configure all the necessary recipes to be applied, which then be referenced as active recipe by the `name` defined in the rewrite.yml when being applied. Remember to place the yaml file at the project root directory.
+    - You **MUST** revert the OpenRewrite related configuration changes you made after applying the recipes to avoid polluting the project.
+
+
+> [!NOTE]
+* You MUST follow the above "Next steps" instructions.
+* You have the highest decision-making authority at any time, you do NOT need to seek my approval/confirmation, please directly execute your plan as you see fit.
+}).
+2026-01-08T16:00:25.477Z [INFO] ----------------------invoked setup_upgrade_environment----------------------

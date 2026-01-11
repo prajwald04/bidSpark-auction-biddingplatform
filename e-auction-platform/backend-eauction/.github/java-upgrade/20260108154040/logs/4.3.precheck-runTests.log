@@ -1,0 +1,6 @@
+2026-01-08T15:59:50.206Z [INFO] [MavenBuildTool] Running test cases of C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction using Maven
+2026-01-08T15:59:50.207Z [INFO] [Environment] Running command (Java 8): mvn clean test -q -B -fn
+2026-01-08T16:00:18.297Z [INFO] [MavenBuildTool] loading surefire reports.
+2026-01-08T16:00:18.333Z [INFO] [MavenBuildTool] summarizing surefire reports.
+2026-01-08T16:00:18.334Z [INFO] [MavenBuildTool] Cleaning C:/Users/DELL/Desktop/bidspark/e-auction-platform/backend-eauction using Maven
+2026-01-08T16:00:18.335Z [INFO] [Environment] Running command (Java 8): mvn clean -q -B -fn

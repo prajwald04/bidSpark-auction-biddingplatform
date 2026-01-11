@@ -1,0 +1,139 @@
+.auction-details {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.notifications-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  max-width: 400px;
+}
+
+.auction-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.auction-details-header h1 {
+  color: #333;
+  margin: 0;
+}
+
+.back-btn {
+  padding: 8px 16px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #545b62;
+}
+
+.auction-details-content {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 30px;
+}
+
+.auction-stats {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.auction-stats h3 {
+  margin-top: 0;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.stat-item:last-child {
+  border-bottom: none;
+}
+
+.stat-label {
+  font-weight: 500;
+  color: #555;
+}
+
+.stat-value {
+  font-weight: 600;
+  color: #333;
+}
+
+.stat-value.status-live {
+  color: #28a745;
+}
+
+.stat-value.status-upcoming {
+  color: #ffc107;
+}
+
+.stat-value.status-ended {
+  color: #dc3545;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+  color: #666;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  margin: 20px 0;
+  border: 1px solid #f5c6cb;
+}
+
+@media (max-width: 768px) {
+  .auction-details {
+    padding: 10px;
+  }
+
+  .auction-details-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .auction-details-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .notifications-container {
+    left: 10px;
+    right: 10px;
+    max-width: none;
+  }
+}
