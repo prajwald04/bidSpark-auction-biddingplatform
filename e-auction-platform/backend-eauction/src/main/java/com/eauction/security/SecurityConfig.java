@@ -40,8 +40,12 @@ public class SecurityConfig {
     @Bean
     CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
+        // Allow local development
         config.addAllowedOrigin("http://localhost:3000");
         config.addAllowedOrigin("http://127.0.0.1:3000");
+        // Allow Netlify deployment
+        config.addAllowedOrigin("https://bidspark.netlify.app");
+        config.addAllowedOrigin("https://*.netlify.app"); // Allow all Netlify preview deployments
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
         config.setAllowCredentials(true);

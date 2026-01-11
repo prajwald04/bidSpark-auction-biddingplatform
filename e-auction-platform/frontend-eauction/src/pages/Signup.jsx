@@ -36,7 +36,9 @@ function Signup() {
       setTimeout(() => navigate('/login'), 1500);
     } catch (err) {
       console.error('Signup error', err);
-      setError(err?.response?.data?.message || 'Registration failed');
+      const errorMessage = err?.response?.data?.message || err?.message || 'Connection failed. Please check if the backend server is running.';
+      setError(errorMessage);
+      console.error('API URL:', process.env.REACT_APP_API_URL || 'http://localhost:8080');
     } finally {
       setLoading(false);
     }

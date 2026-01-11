@@ -48,8 +48,10 @@ function Login() {
           setError('Invalid user role');
       }
     } catch (err) {
-      setError('Invalid username or password');
+      const errorMessage = err?.response?.data?.message || err?.message || 'Connection failed. Please check if the backend server is running.';
+      setError(errorMessage);
       console.error('Login error:', err);
+      console.error('API URL:', process.env.REACT_APP_API_URL || 'http://localhost:8080');
     } finally {
       setLoading(false);
     }
