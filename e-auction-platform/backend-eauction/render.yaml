@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: bidspark-backend
+    env: java
+    buildCommand: cd e-auction-platform/backend-eauction && mvn clean package -DskipTests
+    startCommand: cd e-auction-platform/backend-eauction && java -jar target/backend-eauction-0.0.1-SNAPSHOT.jar
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        sync: false
+      - key: SPRING_DATASOURCE_USERNAME
+        sync: false
+      - key: SPRING_DATASOURCE_PASSWORD
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: PORT
+        value: 8080
+      - key: JAVA_OPTS
+        value: -Xmx512m

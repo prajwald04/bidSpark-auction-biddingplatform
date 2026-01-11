@@ -1,0 +1,12 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "cd e-auction-platform/backend-eauction && mvn clean package -DskipTests"
+  },
+  "deploy": {
+    "startCommand": "cd e-auction-platform/backend-eauction && java -jar target/backend-eauction-0.0.1-SNAPSHOT.jar",
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 10
+  }
+}
